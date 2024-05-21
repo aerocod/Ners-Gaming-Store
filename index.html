@@ -1,0 +1,2947 @@
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Ners Gaming Store - Layanan Top Up Games #1 Indonesia</title>
+
+    <meta name="description" content="Top Up Terlengkap dan Terpercaya di Indonesia">
+    <meta name="keywords" content="Nersgamingstore">
+
+    <link rel="shortcut icon" href="Favicon.png" alt="logo icon nersgamingstore">
+    <link rel="stylesheet" href="simplebar.css">
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="dataTables.css">
+    <link rel="stylesheet" href="animate.css">
+    <link rel="stylesheet" href="icons.css">
+    <link rel="stylesheet" href="horizontal-menu.css">
+    <link rel="stylesheet" href="app-style.css">
+    <link rel="stylesheet" href="style-main.css">
+
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.css">
+    <link href="https://unpkg.com/bootstrap-table@1.21.0/dist/bootstrap-table.min.css" rel="stylesheet">
+
+    <style>
+         :root {
+            --warna: #f6f6f6;
+            --warna_2: #f7f7f7;
+            --warna_3: #05132e;
+        }
+        
+        body {
+            font-size: 14px;
+        }
+        
+        .content {
+            padding-top: 110px;
+            min-height: 446px;
+        }
+        
+        .table-white tr th,
+        .table-white tr td {
+            color: #fff;
+            border-color: #242f3a;
+        }
+        
+        #detail-pembelian .pb-2 {
+            color: #000 !important;
+        }
+        
+        label {
+            font-weight: 500;
+            text-transform: none;
+        }
+        
+        .col-form-label {
+            padding-top: calc(.375rem + 3px);
+        }
+        
+        .card-tools {
+            float: right;
+            margin-top: -25px;
+        }
+        
+        .cursor-pointer {
+            cursor: pointer;
+        }
+        
+        .menu-user a {
+            padding: 10px 16px;
+            border-radius: 5px;
+        }
+        
+        .menu-user a:hover {
+            background: var(--warna_2);
+        }
+        
+        .menu-user a i {
+            font-size: 19px;
+            width: 20px;
+        }
+        
+        .menu-user {
+            margin-bottom: 26px;
+        }
+        
+        .daterangepicker td,
+        .daterangepicker th {
+            color: #626262;
+        }
+        
+        body,
+        .circle-primary {
+            background: var(--warna);
+        }
+        
+        .bg-footer {
+            background-color: var(--warna);
+        }
+        
+        .bg-custom,
+        .bg-theme1 {
+            background: #05132E !important;
+            padding: 20px 20px 20px 20px;
+        }
+        
+        .btn-topup,
+        .back-to-top {
+            background: var(--warna_3);
+        }
+        
+        .section {
+            background: var(--warna_2);
+        }
+        
+        .radio-nominal+label,
+        .radio-nominale+label {
+            background: var(--warna);
+            border: none !important;
+        }
+        
+        .radio-nominale:checked+label,
+        .radio-nominal:checked+label {
+            background: var(--warna_3);
+            color: #fff;
+        }
+        
+        .strip-primary {
+            background: #652572;
+        }
+        
+        .btn-primary {
+            background: var(--warna_3) !important;
+            border-color: var(--warna_3) !important;
+        }
+        
+        .sidenav {
+            background: var(--warna_2);
+        }
+        
+        .radio-nominal:checked+label,
+        .table-white tr th,
+        .table-white tr td {
+            border-color: var(--warna);
+        }
+        
+        .menu-utama div a {
+            margin: 0 4px;
+        }
+        
+        .menu-utama div a:hover,
+        .menu-utama div a.active {
+            background: #000;
+            border-radius: 14px 4px;
+        }
+        
+        .navbar-collapse {
+            background: #05132e;
+        }
+        
+        .menu-list {
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        .menu-list li a {
+            display: block;
+            padding: 10px 0;
+            border-bottom: 1px dashed var(--warna_3);
+            transition: .4s;
+        }
+        
+        .menu-list li a:hover {
+            padding-left: 6px;
+        }
+        
+        .navbar-dark .navbar-nav .nav-link {
+            color: rgb(255 255 255);
+        }
+        
+        .card {
+            border-radius: 10px;
+            background-color: #ffffff;
+            box-shadow: 0px 10px 10px #e7e7e7;
+        }
+        
+        .card-title {
+            min-height: 30px;
+            margin-top: -5px;
+            font-weight: 600;
+            font-size: 10px;
+            color: #000;
+        }
+        
+        .card-title2 {
+            min-height: 30px !important;
+            margin-top: -25px !important;
+            font-weight: 600 !important;
+            font-size: 10px !important;
+            color: #fff !important;
+            background: #000000 !important;
+            padding-top: 8px !important;
+            margin-bottom: 0px !important;
+        }
+        
+        .radio-nominal+label,
+        .radio-nominale+label {
+            background: #ffffff;
+            border: none !important;
+            text-align: left;
+            color: #3e3e3e;
+            box-shadow: 0px 1px darkgrey;
+        }
+        
+        .btn-primary {
+            background: #05132e !important;
+            border-color: #05132e !important;
+        }
+        
+        .radio-nominale:checked+label,
+        .radio-nominal:checked+label {
+            background: #05132e;
+            color: #fff;
+        }
+        
+        .strip-primary {
+            background: #05132e;
+        }
+        
+        .table-white tr th,
+        .table-white tr td {
+            color: #2a2a2a;
+            border-color: #242f3a;
+        }
+        
+        .h1,
+        .h2,
+        .h3,
+        .h4,
+        .h5,
+        .h6,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-weight: 600;
+            color: #2a2a2a;
+        }
+        
+        .pb-3,
+        .py-3 {
+            color: #2a2a2a;
+        }
+        
+        .mb-2,
+        .my-2 {
+            color: #ffffff;
+        }
+        
+        .text-white {
+            color: #2a2a2a!important;
+        }
+        
+        .form-control {
+            border: 1px solid #cfcfcf;
+            background-color: #f1f1f1;
+        }
+        
+        .small,
+        small {
+            color: #2a2a2a;
+        }
+        
+        .form-row>.col,
+        .form-row>[class*=col-] {
+            padding-right: 5px;
+            padding-left: 5px;
+            color: #ffffff;
+        }
+        
+        .gov-car {
+            padding-top: 110px;
+            background: #05132e;
+            height: 25rem;
+            border-bottom-left-radius: 1.5rem;
+            border-bottom-right-radius: 1.5rem;
+            margin-bottom: 10rem !important;
+            margin-left: 20rem;
+            margin-right: 20rem;
+        }
+        
+        .text-hitam {
+            color: #000 !important;
+        }
+        
+        @media only screen and (max-width: 767px) {
+            .gov-car {
+                height: 15rem;
+                margin-bottom: 5rem !important;
+                margin-left: 0rem;
+                margin-right: 0rem;
+            }
+        }
+        
+        .fab-container {
+            position: fixed;
+            bottom: 70px;
+            right: 10px;
+            z-index: 999;
+            cursor: pointer;
+        }
+        
+        .img-fluid2 {
+            max-width: 100%;
+            height: auto;
+            padding-bottom: 15px;
+        }
+        
+        .fab-icon-holder {
+            width: 45px;
+            height: 45px;
+            bottom: 140px;
+            left: 10px;
+            color: #FFF;
+            background: #5865f2;
+            border-radius: 10px;
+            text-align: center;
+            font-size: 30px;
+            z-index: 99999;
+        }
+        
+        .fab-icon-holder:hover {
+            opacity: 0.8;
+        }
+        
+        .fab-icon-holder i {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            font-size: 25px;
+            color: #ffffff;
+        }
+        
+        .fab-options {
+            list-style-type: none;
+            margin: 0;
+            position: absolute;
+            bottom: 48px;
+            left: -45px;
+            opacity: 0;
+            transition: all 0.3s ease;
+            transform: scale(0);
+            transform-origin: 85% bottom;
+        }
+        
+        .fab:hover+.fab-options,
+        .fab-options:hover {
+            opacity: 1;
+            transform: scale(1);
+        }
+        
+        .fab-options li {
+            display: flex;
+            justify-content: flex-start;
+            padding: 5px;
+        }
+        
+        .fab-label {
+            padding: 2px 5px;
+            align-self: center;
+            user-select: none;
+            white-space: nowrap;
+            border-radius: 3px;
+            font-size: 16px;
+            background: #666666;
+            color: #ffffff;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+            margin-left: 10px;
+        }
+        
+        .text-decoration-none {
+            text-decoration: none!important;
+        }
+        
+        .wrapper {
+            margin: auto;
+            width: 1250px;
+            max-width: calc(100% - 40px);
+        }
+        
+        .grid-feature {
+            margin-top: 40px;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 40px;
+            overflow: auto;
+        }
+        
+        .widget2 {
+            display: grid;
+            grid-template-columns: auto 1fr;
+            grid-gap: 40px;
+            padding: 40px;
+            box-shadow: 0px;
+            border: 0px;
+            border-radius: 0px;
+            background: 0px;
+        }
+        
+        .widget {
+            display: grid;
+            grid-template-columns: auto 1fr;
+            grid-gap: 40px;
+            padding: 40px;
+            box-shadow: inset 0 -2px 0 0 rgba(0 0 0 / 10%), 0 10px 15px -3px rgb(0 0 0 / 5%), 0 4px 6px -2px rgb(0 0 0 / 5%);
+            border: 1px solid #0000001a;
+            border-radius: 11px;
+            background: #ffffff;
+        }
+        
+        .icon {
+            height: 110px;
+            transition: .1s;
+            display: flex;
+            align-items: center;
+        }
+        
+        #contact {
+            position: relative;
+            padding: 40px 0;
+            background: #1b1734;
+            color: var(--white);
+            margin-top: 10px;
+        }
+        
+        #contact:before {
+            content: '';
+            border-top: 10px dashed #1B1734;
+            background: #f6f6f6;
+            position: absolute;
+            width: 100%;
+            bottom: calc(100%);
+            left: 0;
+        }
+        
+        #footer #contact .grid-contact {
+            display: grid;
+            grid-template-columns: 1fr auto;
+            font-size: 70%;
+            grid-gap: 20px;
+        }
+        
+        .widget3 {
+            margin: auto;
+            text-align: center;
+        }
+        
+        #footer #about {
+            padding: 40px 0;
+        }
+    </style>
+
+    <style>
+        p {
+            color: #000 !important;
+        }
+        
+        i[class] svg {
+            display: block;
+            width: 64px;
+            height: 104px;
+            fill: #636363;
+            stroke: #636363;
+            transition: .1s;
+            margin: auto;
+        }
+        
+        .content {
+            padding-top: 30px;
+        }
+        
+        @media(max-width:768px) {
+            .grid-feature .widget {
+                min-width: 80vw;
+                grid-template-columns: 1fr;
+                text-align: center;
+                grid-gap: 0px;
+            }
+            .grid-feature {
+                display: flex;
+            }
+            .widget2 {
+                display: grid;
+                grid-template-columns: auto 1fr;
+                grid-gap: 0px;
+                padding: 0px;
+                box-shadow: 0px;
+                border: 0px;
+                border-radius: 0px;
+                background: 0px;
+            }
+            h2 {
+                font-size: 25px;
+                line-height: 30px;
+            }
+            .icon {
+                height: 100px;
+            }
+        }
+    </style>
+    <meta name="thumbnail" content="”https://tokovalorant.com/assets/images/1659705174_5170ce4a692780c7f8ec.png”">
+    <style type="text/css" id="operaUserStyle"></style>
+    <style>
+        .swal2-popup.swal2-toast {
+            box-sizing: border-box;
+            grid-column: 1/4 !important;
+            grid-row: 1/4 !important;
+            grid-template-columns: min-content auto min-content;
+            padding: 1em;
+            overflow-y: hidden;
+            background: #fff;
+            box-shadow: 0 0 1px rgba(0, 0, 0, .075), 0 1px 2px rgba(0, 0, 0, .075), 1px 2px 4px rgba(0, 0, 0, .075), 1px 3px 8px rgba(0, 0, 0, .075), 2px 4px 16px rgba(0, 0, 0, .075);
+            pointer-events: all
+        }
+        
+        .swal2-popup.swal2-toast>* {
+            grid-column: 2
+        }
+        
+        .swal2-popup.swal2-toast .swal2-title {
+            margin: .5em 1em;
+            padding: 0;
+            font-size: 1em;
+            text-align: initial
+        }
+        
+        .swal2-popup.swal2-toast .swal2-loading {
+            justify-content: center
+        }
+        
+        .swal2-popup.swal2-toast .swal2-input {
+            height: 2em;
+            margin: .5em;
+            font-size: 1em
+        }
+        
+        .swal2-popup.swal2-toast .swal2-validation-message {
+            font-size: 1em
+        }
+        
+        .swal2-popup.swal2-toast .swal2-footer {
+            margin: .5em 0 0;
+            padding: .5em 0 0;
+            font-size: .8em
+        }
+        
+        .swal2-popup.swal2-toast .swal2-close {
+            grid-column: 3/3;
+            grid-row: 1/99;
+            align-self: center;
+            width: .8em;
+            height: .8em;
+            margin: 0;
+            font-size: 2em
+        }
+        
+        .swal2-popup.swal2-toast .swal2-html-container {
+            margin: .5em 1em;
+            padding: 0;
+            overflow: initial;
+            font-size: 1em;
+            text-align: initial
+        }
+        
+        .swal2-popup.swal2-toast .swal2-html-container:empty {
+            padding: 0
+        }
+        
+        .swal2-popup.swal2-toast .swal2-loader {
+            grid-column: 1;
+            grid-row: 1/99;
+            align-self: center;
+            width: 2em;
+            height: 2em;
+            margin: .25em
+        }
+        
+        .swal2-popup.swal2-toast .swal2-icon {
+            grid-column: 1;
+            grid-row: 1/99;
+            align-self: center;
+            width: 2em;
+            min-width: 2em;
+            height: 2em;
+            margin: 0 .5em 0 0
+        }
+        
+        .swal2-popup.swal2-toast .swal2-icon .swal2-icon-content {
+            display: flex;
+            align-items: center;
+            font-size: 1.8em;
+            font-weight: bold
+        }
+        
+        .swal2-popup.swal2-toast .swal2-icon.swal2-success .swal2-success-ring {
+            width: 2em;
+            height: 2em
+        }
+        
+        .swal2-popup.swal2-toast .swal2-icon.swal2-error [class^=swal2-x-mark-line] {
+            top: .875em;
+            width: 1.375em
+        }
+        
+        .swal2-popup.swal2-toast .swal2-icon.swal2-error [class^=swal2-x-mark-line][class$=left] {
+            left: .3125em
+        }
+        
+        .swal2-popup.swal2-toast .swal2-icon.swal2-error [class^=swal2-x-mark-line][class$=right] {
+            right: .3125em
+        }
+        
+        .swal2-popup.swal2-toast .swal2-actions {
+            justify-content: flex-start;
+            height: auto;
+            margin: 0;
+            margin-top: .5em;
+            padding: 0 .5em
+        }
+        
+        .swal2-popup.swal2-toast .swal2-styled {
+            margin: .25em .5em;
+            padding: .4em .6em;
+            font-size: 1em
+        }
+        
+        .swal2-popup.swal2-toast .swal2-success {
+            border-color: #a5dc86
+        }
+        
+        .swal2-popup.swal2-toast .swal2-success [class^=swal2-success-circular-line] {
+            position: absolute;
+            width: 1.6em;
+            height: 3em;
+            transform: rotate(45deg);
+            border-radius: 50%
+        }
+        
+        .swal2-popup.swal2-toast .swal2-success [class^=swal2-success-circular-line][class$=left] {
+            top: -0.8em;
+            left: -0.5em;
+            transform: rotate(-45deg);
+            transform-origin: 2em 2em;
+            border-radius: 4em 0 0 4em
+        }
+        
+        .swal2-popup.swal2-toast .swal2-success [class^=swal2-success-circular-line][class$=right] {
+            top: -0.25em;
+            left: .9375em;
+            transform-origin: 0 1.5em;
+            border-radius: 0 4em 4em 0
+        }
+        
+        .swal2-popup.swal2-toast .swal2-success .swal2-success-ring {
+            width: 2em;
+            height: 2em
+        }
+        
+        .swal2-popup.swal2-toast .swal2-success .swal2-success-fix {
+            top: 0;
+            left: .4375em;
+            width: .4375em;
+            height: 2.6875em
+        }
+        
+        .swal2-popup.swal2-toast .swal2-success [class^=swal2-success-line] {
+            height: .3125em
+        }
+        
+        .swal2-popup.swal2-toast .swal2-success [class^=swal2-success-line][class$=tip] {
+            top: 1.125em;
+            left: .1875em;
+            width: .75em
+        }
+        
+        .swal2-popup.swal2-toast .swal2-success [class^=swal2-success-line][class$=long] {
+            top: .9375em;
+            right: .1875em;
+            width: 1.375em
+        }
+        
+        .swal2-popup.swal2-toast .swal2-success.swal2-icon-show .swal2-success-line-tip {
+            animation: swal2-toast-animate-success-line-tip .75s
+        }
+        
+        .swal2-popup.swal2-toast .swal2-success.swal2-icon-show .swal2-success-line-long {
+            animation: swal2-toast-animate-success-line-long .75s
+        }
+        
+        .swal2-popup.swal2-toast.swal2-show {
+            animation: swal2-toast-show .5s
+        }
+        
+        .swal2-popup.swal2-toast.swal2-hide {
+            animation: swal2-toast-hide .1s forwards
+        }
+        
+        .swal2-container {
+            display: grid;
+            position: fixed;
+            z-index: 1060;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            box-sizing: border-box;
+            grid-template-areas: "top-start     top            top-end" "center-start  center         center-end" "bottom-start  bottom-center  bottom-end";
+            grid-template-rows: minmax(min-content, auto) minmax(min-content, auto) minmax(min-content, auto);
+            height: 100%;
+            padding: .625em;
+            overflow-x: hidden;
+            transition: background-color .1s;
+            -webkit-overflow-scrolling: touch
+        }
+        
+        .swal2-container.swal2-backdrop-show,
+        .swal2-container.swal2-noanimation {
+            background: rgba(0, 0, 0, .4)
+        }
+        
+        .swal2-container.swal2-backdrop-hide {
+            background: rgba(0, 0, 0, 0) !important
+        }
+        
+        .swal2-container.swal2-top-start,
+        .swal2-container.swal2-center-start,
+        .swal2-container.swal2-bottom-start {
+            grid-template-columns: minmax(0, 1fr) auto auto
+        }
+        
+        .swal2-container.swal2-top,
+        .swal2-container.swal2-center,
+        .swal2-container.swal2-bottom {
+            grid-template-columns: auto minmax(0, 1fr) auto
+        }
+        
+        .swal2-container.swal2-top-end,
+        .swal2-container.swal2-center-end,
+        .swal2-container.swal2-bottom-end {
+            grid-template-columns: auto auto minmax(0, 1fr)
+        }
+        
+        .swal2-container.swal2-top-start>.swal2-popup {
+            align-self: start
+        }
+        
+        .swal2-container.swal2-top>.swal2-popup {
+            grid-column: 2;
+            align-self: start;
+            justify-self: center
+        }
+        
+        .swal2-container.swal2-top-end>.swal2-popup,
+        .swal2-container.swal2-top-right>.swal2-popup {
+            grid-column: 3;
+            align-self: start;
+            justify-self: end
+        }
+        
+        .swal2-container.swal2-center-start>.swal2-popup,
+        .swal2-container.swal2-center-left>.swal2-popup {
+            grid-row: 2;
+            align-self: center
+        }
+        
+        .swal2-container.swal2-center>.swal2-popup {
+            grid-column: 2;
+            grid-row: 2;
+            align-self: center;
+            justify-self: center
+        }
+        
+        .swal2-container.swal2-center-end>.swal2-popup,
+        .swal2-container.swal2-center-right>.swal2-popup {
+            grid-column: 3;
+            grid-row: 2;
+            align-self: center;
+            justify-self: end
+        }
+        
+        .swal2-container.swal2-bottom-start>.swal2-popup,
+        .swal2-container.swal2-bottom-left>.swal2-popup {
+            grid-column: 1;
+            grid-row: 3;
+            align-self: end
+        }
+        
+        .swal2-container.swal2-bottom>.swal2-popup {
+            grid-column: 2;
+            grid-row: 3;
+            justify-self: center;
+            align-self: end
+        }
+        
+        .swal2-container.swal2-bottom-end>.swal2-popup,
+        .swal2-container.swal2-bottom-right>.swal2-popup {
+            grid-column: 3;
+            grid-row: 3;
+            align-self: end;
+            justify-self: end
+        }
+        
+        .swal2-container.swal2-grow-row>.swal2-popup,
+        .swal2-container.swal2-grow-fullscreen>.swal2-popup {
+            grid-column: 1/4;
+            width: 100%
+        }
+        
+        .swal2-container.swal2-grow-column>.swal2-popup,
+        .swal2-container.swal2-grow-fullscreen>.swal2-popup {
+            grid-row: 1/4;
+            align-self: stretch
+        }
+        
+        .swal2-container.swal2-no-transition {
+            transition: none !important
+        }
+        
+        .swal2-popup {
+            display: none;
+            position: relative;
+            box-sizing: border-box;
+            grid-template-columns: minmax(0, 100%);
+            width: 32em;
+            max-width: 100%;
+            padding: 0 0 1.25em;
+            border: none;
+            border-radius: 5px;
+            background: #fff;
+            color: #545454;
+            font-family: inherit;
+            font-size: 1rem
+        }
+        
+        .swal2-popup:focus {
+            outline: none
+        }
+        
+        .swal2-popup.swal2-loading {
+            overflow-y: hidden
+        }
+        
+        .swal2-title {
+            position: relative;
+            max-width: 100%;
+            margin: 0;
+            padding: .8em 1em 0;
+            color: inherit;
+            font-size: 1.875em;
+            font-weight: 600;
+            text-align: center;
+            text-transform: none;
+            word-wrap: break-word
+        }
+        
+        .swal2-actions {
+            display: flex;
+            z-index: 1;
+            box-sizing: border-box;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            width: auto;
+            margin: 1.25em auto 0;
+            padding: 0
+        }
+        
+        .swal2-actions:not(.swal2-loading) .swal2-styled[disabled] {
+            opacity: .4
+        }
+        
+        .swal2-actions:not(.swal2-loading) .swal2-styled:hover {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1))
+        }
+        
+        .swal2-actions:not(.swal2-loading) .swal2-styled:active {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2))
+        }
+        
+        .swal2-loader {
+            display: none;
+            align-items: center;
+            justify-content: center;
+            width: 2.2em;
+            height: 2.2em;
+            margin: 0 1.875em;
+            animation: swal2-rotate-loading 1.5s linear 0s infinite normal;
+            border-width: .25em;
+            border-style: solid;
+            border-radius: 100%;
+            border-color: #2778c4 rgba(0, 0, 0, 0) #2778c4 rgba(0, 0, 0, 0)
+        }
+        
+        .swal2-styled {
+            margin: .3125em;
+            padding: .625em 1.1em;
+            transition: box-shadow .1s;
+            box-shadow: 0 0 0 3px rgba(0, 0, 0, 0);
+            font-weight: 500
+        }
+        
+        .swal2-styled:not([disabled]) {
+            cursor: pointer
+        }
+        
+        .swal2-styled.swal2-confirm {
+            border: 0;
+            border-radius: .25em;
+            background: initial;
+            background-color: #7066e0;
+            color: #fff;
+            font-size: 1em
+        }
+        
+        .swal2-styled.swal2-confirm:focus {
+            box-shadow: 0 0 0 3px rgba(112, 102, 224, .5)
+        }
+        
+        .swal2-styled.swal2-deny {
+            border: 0;
+            border-radius: .25em;
+            background: initial;
+            background-color: #dc3741;
+            color: #fff;
+            font-size: 1em
+        }
+        
+        .swal2-styled.swal2-deny:focus {
+            box-shadow: 0 0 0 3px rgba(220, 55, 65, .5)
+        }
+        
+        .swal2-styled.swal2-cancel {
+            border: 0;
+            border-radius: .25em;
+            background: initial;
+            background-color: #6e7881;
+            color: #fff;
+            font-size: 1em
+        }
+        
+        .swal2-styled.swal2-cancel:focus {
+            box-shadow: 0 0 0 3px rgba(110, 120, 129, .5)
+        }
+        
+        .swal2-styled.swal2-default-outline:focus {
+            box-shadow: 0 0 0 3px rgba(100, 150, 200, .5)
+        }
+        
+        .swal2-styled:focus {
+            outline: none
+        }
+        
+        .swal2-styled::-moz-focus-inner {
+            border: 0
+        }
+        
+        .swal2-footer {
+            justify-content: center;
+            margin: 1em 0 0;
+            padding: 1em 1em 0;
+            border-top: 1px solid #eee;
+            color: inherit;
+            font-size: 1em
+        }
+        
+        .swal2-timer-progress-bar-container {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            grid-column: auto !important;
+            overflow: hidden;
+            border-bottom-right-radius: 5px;
+            border-bottom-left-radius: 5px
+        }
+        
+        .swal2-timer-progress-bar {
+            width: 100%;
+            height: .25em;
+            background: rgba(0, 0, 0, .2)
+        }
+        
+        .swal2-image {
+            max-width: 100%;
+            margin: 2em auto 1em
+        }
+        
+        .swal2-close {
+            z-index: 2;
+            align-items: center;
+            justify-content: center;
+            width: 1.2em;
+            height: 1.2em;
+            margin-top: 0;
+            margin-right: 0;
+            margin-bottom: -1.2em;
+            padding: 0;
+            overflow: hidden;
+            transition: color .1s, box-shadow .1s;
+            border: none;
+            border-radius: 5px;
+            background: rgba(0, 0, 0, 0);
+            color: #ccc;
+            font-family: serif;
+            font-family: monospace;
+            font-size: 2.5em;
+            cursor: pointer;
+            justify-self: end
+        }
+        
+        .swal2-close:hover {
+            transform: none;
+            background: rgba(0, 0, 0, 0);
+            color: #f27474
+        }
+        
+        .swal2-close:focus {
+            outline: none;
+            box-shadow: inset 0 0 0 3px rgba(100, 150, 200, .5)
+        }
+        
+        .swal2-close::-moz-focus-inner {
+            border: 0
+        }
+        
+        .swal2-html-container {
+            z-index: 1;
+            justify-content: center;
+            margin: 1em 1.6em .3em;
+            padding: 0;
+            overflow: auto;
+            color: inherit;
+            font-size: 1.125em;
+            font-weight: normal;
+            line-height: normal;
+            text-align: center;
+            word-wrap: break-word;
+            word-break: break-word
+        }
+        
+        .swal2-input,
+        .swal2-file,
+        .swal2-textarea,
+        .swal2-select,
+        .swal2-radio,
+        .swal2-checkbox {
+            margin: 1em 2em 3px
+        }
+        
+        .swal2-input,
+        .swal2-file,
+        .swal2-textarea {
+            box-sizing: border-box;
+            width: auto;
+            transition: border-color .1s, box-shadow .1s;
+            border: 1px solid #d9d9d9;
+            border-radius: .1875em;
+            background: rgba(0, 0, 0, 0);
+            box-shadow: inset 0 1px 1px rgba(0, 0, 0, .06), 0 0 0 3px rgba(0, 0, 0, 0);
+            color: inherit;
+            font-size: 1.125em
+        }
+        
+        .swal2-input.swal2-inputerror,
+        .swal2-file.swal2-inputerror,
+        .swal2-textarea.swal2-inputerror {
+            border-color: #f27474 !important;
+            box-shadow: 0 0 2px #f27474 !important
+        }
+        
+        .swal2-input:focus,
+        .swal2-file:focus,
+        .swal2-textarea:focus {
+            border: 1px solid #b4dbed;
+            outline: none;
+            box-shadow: inset 0 1px 1px rgba(0, 0, 0, .06), 0 0 0 3px rgba(100, 150, 200, .5)
+        }
+        
+        .swal2-input::placeholder,
+        .swal2-file::placeholder,
+        .swal2-textarea::placeholder {
+            color: #ccc
+        }
+        
+        .swal2-range {
+            margin: 1em 2em 3px;
+            background: #fff
+        }
+        
+        .swal2-range input {
+            width: 80%
+        }
+        
+        .swal2-range output {
+            width: 20%;
+            color: inherit;
+            font-weight: 600;
+            text-align: center
+        }
+        
+        .swal2-range input,
+        .swal2-range output {
+            height: 2.625em;
+            padding: 0;
+            font-size: 1.125em;
+            line-height: 2.625em
+        }
+        
+        .swal2-input {
+            height: 2.625em;
+            padding: 0 .75em
+        }
+        
+        .swal2-file {
+            width: 75%;
+            margin-right: auto;
+            margin-left: auto;
+            background: rgba(0, 0, 0, 0);
+            font-size: 1.125em
+        }
+        
+        .swal2-textarea {
+            height: 6.75em;
+            padding: .75em
+        }
+        
+        .swal2-select {
+            min-width: 50%;
+            max-width: 100%;
+            padding: .375em .625em;
+            background: rgba(0, 0, 0, 0);
+            color: inherit;
+            font-size: 1.125em
+        }
+        
+        .swal2-radio,
+        .swal2-checkbox {
+            align-items: center;
+            justify-content: center;
+            background: #fff;
+            color: inherit
+        }
+        
+        .swal2-radio label,
+        .swal2-checkbox label {
+            margin: 0 .6em;
+            font-size: 1.125em
+        }
+        
+        .swal2-radio input,
+        .swal2-checkbox input {
+            flex-shrink: 0;
+            margin: 0 .4em
+        }
+        
+        .swal2-input-label {
+            display: flex;
+            justify-content: center;
+            margin: 1em auto 0
+        }
+        
+        .swal2-validation-message {
+            align-items: center;
+            justify-content: center;
+            margin: 1em 0 0;
+            padding: .625em;
+            overflow: hidden;
+            background: #f0f0f0;
+            color: #666;
+            font-size: 1em;
+            font-weight: 300
+        }
+        
+        .swal2-validation-message::before {
+            content: "!";
+            display: inline-block;
+            width: 1.5em;
+            min-width: 1.5em;
+            height: 1.5em;
+            margin: 0 .625em;
+            border-radius: 50%;
+            background-color: #f27474;
+            color: #fff;
+            font-weight: 600;
+            line-height: 1.5em;
+            text-align: center
+        }
+        
+        .swal2-icon {
+            position: relative;
+            box-sizing: content-box;
+            justify-content: center;
+            width: 5em;
+            height: 5em;
+            margin: 2.5em auto .6em;
+            border: 0.25em solid rgba(0, 0, 0, 0);
+            border-radius: 50%;
+            border-color: #000;
+            font-family: inherit;
+            line-height: 5em;
+            cursor: default;
+            user-select: none
+        }
+        
+        .swal2-icon .swal2-icon-content {
+            display: flex;
+            align-items: center;
+            font-size: 3.75em
+        }
+        
+        .swal2-icon.swal2-error {
+            border-color: #f27474;
+            color: #f27474
+        }
+        
+        .swal2-icon.swal2-error .swal2-x-mark {
+            position: relative;
+            flex-grow: 1
+        }
+        
+        .swal2-icon.swal2-error [class^=swal2-x-mark-line] {
+            display: block;
+            position: absolute;
+            top: 2.3125em;
+            width: 2.9375em;
+            height: .3125em;
+            border-radius: .125em;
+            background-color: #f27474
+        }
+        
+        .swal2-icon.swal2-error [class^=swal2-x-mark-line][class$=left] {
+            left: 1.0625em;
+            transform: rotate(45deg)
+        }
+        
+        .swal2-icon.swal2-error [class^=swal2-x-mark-line][class$=right] {
+            right: 1em;
+            transform: rotate(-45deg)
+        }
+        
+        .swal2-icon.swal2-error.swal2-icon-show {
+            animation: swal2-animate-error-icon .5s
+        }
+        
+        .swal2-icon.swal2-error.swal2-icon-show .swal2-x-mark {
+            animation: swal2-animate-error-x-mark .5s
+        }
+        
+        .swal2-icon.swal2-warning {
+            border-color: #facea8;
+            color: #f8bb86
+        }
+        
+        .swal2-icon.swal2-warning.swal2-icon-show {
+            animation: swal2-animate-error-icon .5s
+        }
+        
+        .swal2-icon.swal2-warning.swal2-icon-show .swal2-icon-content {
+            animation: swal2-animate-i-mark .5s
+        }
+        
+        .swal2-icon.swal2-info {
+            border-color: #9de0f6;
+            color: #3fc3ee
+        }
+        
+        .swal2-icon.swal2-info.swal2-icon-show {
+            animation: swal2-animate-error-icon .5s
+        }
+        
+        .swal2-icon.swal2-info.swal2-icon-show .swal2-icon-content {
+            animation: swal2-animate-i-mark .8s
+        }
+        
+        .swal2-icon.swal2-question {
+            border-color: #c9dae1;
+            color: #87adbd
+        }
+        
+        .swal2-icon.swal2-question.swal2-icon-show {
+            animation: swal2-animate-error-icon .5s
+        }
+        
+        .swal2-icon.swal2-question.swal2-icon-show .swal2-icon-content {
+            animation: swal2-animate-question-mark .8s
+        }
+        
+        .swal2-icon.swal2-success {
+            border-color: #a5dc86;
+            color: #a5dc86
+        }
+        
+        .swal2-icon.swal2-success [class^=swal2-success-circular-line] {
+            position: absolute;
+            width: 3.75em;
+            height: 7.5em;
+            transform: rotate(45deg);
+            border-radius: 50%
+        }
+        
+        .swal2-icon.swal2-success [class^=swal2-success-circular-line][class$=left] {
+            top: -0.4375em;
+            left: -2.0635em;
+            transform: rotate(-45deg);
+            transform-origin: 3.75em 3.75em;
+            border-radius: 7.5em 0 0 7.5em
+        }
+        
+        .swal2-icon.swal2-success [class^=swal2-success-circular-line][class$=right] {
+            top: -0.6875em;
+            left: 1.875em;
+            transform: rotate(-45deg);
+            transform-origin: 0 3.75em;
+            border-radius: 0 7.5em 7.5em 0
+        }
+        
+        .swal2-icon.swal2-success .swal2-success-ring {
+            position: absolute;
+            z-index: 2;
+            top: -0.25em;
+            left: -0.25em;
+            box-sizing: content-box;
+            width: 100%;
+            height: 100%;
+            border: .25em solid rgba(165, 220, 134, .3);
+            border-radius: 50%
+        }
+        
+        .swal2-icon.swal2-success .swal2-success-fix {
+            position: absolute;
+            z-index: 1;
+            top: .5em;
+            left: 1.625em;
+            width: .4375em;
+            height: 5.625em;
+            transform: rotate(-45deg)
+        }
+        
+        .swal2-icon.swal2-success [class^=swal2-success-line] {
+            display: block;
+            position: absolute;
+            z-index: 2;
+            height: .3125em;
+            border-radius: .125em;
+            background-color: #a5dc86
+        }
+        
+        .swal2-icon.swal2-success [class^=swal2-success-line][class$=tip] {
+            top: 2.875em;
+            left: .8125em;
+            width: 1.5625em;
+            transform: rotate(45deg)
+        }
+        
+        .swal2-icon.swal2-success [class^=swal2-success-line][class$=long] {
+            top: 2.375em;
+            right: .5em;
+            width: 2.9375em;
+            transform: rotate(-45deg)
+        }
+        
+        .swal2-icon.swal2-success.swal2-icon-show .swal2-success-line-tip {
+            animation: swal2-animate-success-line-tip .75s
+        }
+        
+        .swal2-icon.swal2-success.swal2-icon-show .swal2-success-line-long {
+            animation: swal2-animate-success-line-long .75s
+        }
+        
+        .swal2-icon.swal2-success.swal2-icon-show .swal2-success-circular-line-right {
+            animation: swal2-rotate-success-circular-line 4.25s ease-in
+        }
+        
+        .swal2-progress-steps {
+            flex-wrap: wrap;
+            align-items: center;
+            max-width: 100%;
+            margin: 1.25em auto;
+            padding: 0;
+            background: rgba(0, 0, 0, 0);
+            font-weight: 600
+        }
+        
+        .swal2-progress-steps li {
+            display: inline-block;
+            position: relative
+        }
+        
+        .swal2-progress-steps .swal2-progress-step {
+            z-index: 20;
+            flex-shrink: 0;
+            width: 2em;
+            height: 2em;
+            border-radius: 2em;
+            background: #2778c4;
+            color: #fff;
+            line-height: 2em;
+            text-align: center
+        }
+        
+        .swal2-progress-steps .swal2-progress-step.swal2-active-progress-step {
+            background: #2778c4
+        }
+        
+        .swal2-progress-steps .swal2-progress-step.swal2-active-progress-step~.swal2-progress-step {
+            background: #add8e6;
+            color: #fff
+        }
+        
+        .swal2-progress-steps .swal2-progress-step.swal2-active-progress-step~.swal2-progress-step-line {
+            background: #add8e6
+        }
+        
+        .swal2-progress-steps .swal2-progress-step-line {
+            z-index: 10;
+            flex-shrink: 0;
+            width: 2.5em;
+            height: .4em;
+            margin: 0 -1px;
+            background: #2778c4
+        }
+        
+        [class^=swal2] {
+            -webkit-tap-highlight-color: rgba(0, 0, 0, 0)
+        }
+        
+        .swal2-show {
+            animation: swal2-show .3s
+        }
+        
+        .swal2-hide {
+            animation: swal2-hide .15s forwards
+        }
+        
+        .swal2-noanimation {
+            transition: none
+        }
+        
+        .swal2-scrollbar-measure {
+            position: absolute;
+            top: -9999px;
+            width: 50px;
+            height: 50px;
+            overflow: scroll
+        }
+        
+        .swal2-rtl .swal2-close {
+            margin-right: initial;
+            margin-left: 0
+        }
+        
+        .swal2-rtl .swal2-timer-progress-bar {
+            right: 0;
+            left: auto
+        }
+        
+        @keyframes swal2-toast-show {
+            0% {
+                transform: translateY(-0.625em) rotateZ(2deg)
+            }
+            33% {
+                transform: translateY(0) rotateZ(-2deg)
+            }
+            66% {
+                transform: translateY(0.3125em) rotateZ(2deg)
+            }
+            100% {
+                transform: translateY(0) rotateZ(0deg)
+            }
+        }
+        
+        @keyframes swal2-toast-hide {
+            100% {
+                transform: rotateZ(1deg);
+                opacity: 0
+            }
+        }
+        
+        @keyframes swal2-toast-animate-success-line-tip {
+            0% {
+                top: .5625em;
+                left: .0625em;
+                width: 0
+            }
+            54% {
+                top: .125em;
+                left: .125em;
+                width: 0
+            }
+            70% {
+                top: .625em;
+                left: -0.25em;
+                width: 1.625em
+            }
+            84% {
+                top: 1.0625em;
+                left: .75em;
+                width: .5em
+            }
+            100% {
+                top: 1.125em;
+                left: .1875em;
+                width: .75em
+            }
+        }
+        
+        @keyframes swal2-toast-animate-success-line-long {
+            0% {
+                top: 1.625em;
+                right: 1.375em;
+                width: 0
+            }
+            65% {
+                top: 1.25em;
+                right: .9375em;
+                width: 0
+            }
+            84% {
+                top: .9375em;
+                right: 0;
+                width: 1.125em
+            }
+            100% {
+                top: .9375em;
+                right: .1875em;
+                width: 1.375em
+            }
+        }
+        
+        @keyframes swal2-show {
+            0% {
+                transform: scale(0.7)
+            }
+            45% {
+                transform: scale(1.05)
+            }
+            80% {
+                transform: scale(0.95)
+            }
+            100% {
+                transform: scale(1)
+            }
+        }
+        
+        @keyframes swal2-hide {
+            0% {
+                transform: scale(1);
+                opacity: 1
+            }
+            100% {
+                transform: scale(0.5);
+                opacity: 0
+            }
+        }
+        
+        @keyframes swal2-animate-success-line-tip {
+            0% {
+                top: 1.1875em;
+                left: .0625em;
+                width: 0
+            }
+            54% {
+                top: 1.0625em;
+                left: .125em;
+                width: 0
+            }
+            70% {
+                top: 2.1875em;
+                left: -0.375em;
+                width: 3.125em
+            }
+            84% {
+                top: 3em;
+                left: 1.3125em;
+                width: 1.0625em
+            }
+            100% {
+                top: 2.8125em;
+                left: .8125em;
+                width: 1.5625em
+            }
+        }
+        
+        @keyframes swal2-animate-success-line-long {
+            0% {
+                top: 3.375em;
+                right: 2.875em;
+                width: 0
+            }
+            65% {
+                top: 3.375em;
+                right: 2.875em;
+                width: 0
+            }
+            84% {
+                top: 2.1875em;
+                right: 0;
+                width: 3.4375em
+            }
+            100% {
+                top: 2.375em;
+                right: .5em;
+                width: 2.9375em
+            }
+        }
+        
+        @keyframes swal2-rotate-success-circular-line {
+            0% {
+                transform: rotate(-45deg)
+            }
+            5% {
+                transform: rotate(-45deg)
+            }
+            12% {
+                transform: rotate(-405deg)
+            }
+            100% {
+                transform: rotate(-405deg)
+            }
+        }
+        
+        @keyframes swal2-animate-error-x-mark {
+            0% {
+                margin-top: 1.625em;
+                transform: scale(0.4);
+                opacity: 0
+            }
+            50% {
+                margin-top: 1.625em;
+                transform: scale(0.4);
+                opacity: 0
+            }
+            80% {
+                margin-top: -0.375em;
+                transform: scale(1.15)
+            }
+            100% {
+                margin-top: 0;
+                transform: scale(1);
+                opacity: 1
+            }
+        }
+        
+        @keyframes swal2-animate-error-icon {
+            0% {
+                transform: rotateX(100deg);
+                opacity: 0
+            }
+            100% {
+                transform: rotateX(0deg);
+                opacity: 1
+            }
+        }
+        
+        @keyframes swal2-rotate-loading {
+            0% {
+                transform: rotate(0deg)
+            }
+            100% {
+                transform: rotate(360deg)
+            }
+        }
+        
+        @keyframes swal2-animate-question-mark {
+            0% {
+                transform: rotateY(-360deg)
+            }
+            100% {
+                transform: rotateY(0)
+            }
+        }
+        
+        @keyframes swal2-animate-i-mark {
+            0% {
+                transform: rotateZ(45deg);
+                opacity: 0
+            }
+            25% {
+                transform: rotateZ(-25deg);
+                opacity: .4
+            }
+            50% {
+                transform: rotateZ(15deg);
+                opacity: .8
+            }
+            75% {
+                transform: rotateZ(-5deg);
+                opacity: 1
+            }
+            100% {
+                transform: rotateX(0);
+                opacity: 1
+            }
+        }
+        
+        body.swal2-shown:not(.swal2-no-backdrop):not(.swal2-toast-shown) {
+            overflow: hidden
+        }
+        
+        body.swal2-height-auto {
+            height: auto !important
+        }
+        
+        body.swal2-no-backdrop .swal2-container {
+            background-color: rgba(0, 0, 0, 0) !important;
+            pointer-events: none
+        }
+        
+        body.swal2-no-backdrop .swal2-container .swal2-popup {
+            pointer-events: all
+        }
+        
+        body.swal2-no-backdrop .swal2-container .swal2-modal {
+            box-shadow: 0 0 10px rgba(0, 0, 0, .4)
+        }
+        
+        @media print {
+            body.swal2-shown:not(.swal2-no-backdrop):not(.swal2-toast-shown) {
+                overflow-y: scroll !important
+            }
+            body.swal2-shown:not(.swal2-no-backdrop):not(.swal2-toast-shown)>[aria-hidden=true] {
+                display: none
+            }
+            body.swal2-shown:not(.swal2-no-backdrop):not(.swal2-toast-shown) .swal2-container {
+                position: static !important
+            }
+        }
+        
+        body.swal2-toast-shown .swal2-container {
+            box-sizing: border-box;
+            width: 360px;
+            max-width: 100%;
+            background-color: rgba(0, 0, 0, 0);
+            pointer-events: none
+        }
+        
+        body.swal2-toast-shown .swal2-container.swal2-top {
+            top: 0;
+            right: auto;
+            bottom: auto;
+            left: 50%;
+            transform: translateX(-50%)
+        }
+        
+        body.swal2-toast-shown .swal2-container.swal2-top-end,
+        body.swal2-toast-shown .swal2-container.swal2-top-right {
+            top: 0;
+            right: 0;
+            bottom: auto;
+            left: auto
+        }
+        
+        body.swal2-toast-shown .swal2-container.swal2-top-start,
+        body.swal2-toast-shown .swal2-container.swal2-top-left {
+            top: 0;
+            right: auto;
+            bottom: auto;
+            left: 0
+        }
+        
+        body.swal2-toast-shown .swal2-container.swal2-center-start,
+        body.swal2-toast-shown .swal2-container.swal2-center-left {
+            top: 50%;
+            right: auto;
+            bottom: auto;
+            left: 0;
+            transform: translateY(-50%)
+        }
+        
+        body.swal2-toast-shown .swal2-container.swal2-center {
+            top: 50%;
+            right: auto;
+            bottom: auto;
+            left: 50%;
+            transform: translate(-50%, -50%)
+        }
+        
+        body.swal2-toast-shown .swal2-container.swal2-center-end,
+        body.swal2-toast-shown .swal2-container.swal2-center-right {
+            top: 50%;
+            right: 0;
+            bottom: auto;
+            left: auto;
+            transform: translateY(-50%)
+        }
+        
+        body.swal2-toast-shown .swal2-container.swal2-bottom-start,
+        body.swal2-toast-shown .swal2-container.swal2-bottom-left {
+            top: auto;
+            right: auto;
+            bottom: 0;
+            left: 0
+        }
+        
+        body.swal2-toast-shown .swal2-container.swal2-bottom {
+            top: auto;
+            right: auto;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%)
+        }
+        
+        body.swal2-toast-shown .swal2-container.swal2-bottom-end,
+        body.swal2-toast-shown .swal2-container.swal2-bottom-right {
+            top: auto;
+            right: 0;
+            bottom: 0;
+            left: auto
+        }
+    </style>
+    <style>
+        .cke {
+            visibility: hidden;
+        }
+    </style>
+    <style type="text/css">
+         :root topadblock,
+         :root span[id^="ezoic-pub-ad-placeholder-"],
+         :root guj-ad,
+         :root gpt-ad,
+         :root div[jsdata*="CarouselPLA-"][data-id^="CarouselPLA-"],
+         :root div[id^="yandex_ad"],
+         :root div[id^="vuukle-ad-"],
+         :root div[id^="rc-widget-"],
+         :root div[id^="lazyad-"],
+         :root div[id^="js-dfp-"],
+         :root div[id^="gtm-ad-"],
+         :root div[id^="gpt_ad_"],
+         :root div[id^="gpt-ad-hor"],
+         :root div[id^="div-gpt-"],
+         :root div[id^="dfp-slot-"],
+         :root div[id^="dfp-ad-"],
+         :root div[id^="advads_"],
+         :root div[id^="adspot-"],
+         :root div[id^="ads300_250-widget-"],
+         :root div[id^="ads300_100-widget-"],
+         :root div[id^="ads250_250-widget-"],
+         :root div[id^="adrotate_widgets-"],
+         :root div[id^="adngin-"],
+         :root div[id^="adfox_"],
+         :root div[id^="ad_script_"],
+         :root div[id^="ad-server-"],
+         :root div[id^="ad-gpt-"],
+         :root div[id^="ad-div-"],
+         :root div[id*="ScriptRoot"],
+         :root div[id*="MarketGid"],
+         :root div[data-mpu1],
+         :root div[data-insertion],
+         :root div[data-id-advertdfpconf],
+         :root div[data-google-query-id],
+         :root hl-adsense,
+         :root div[data-contentexchange-widget],
+         :root div[data-content="Advertisement"],
+         :root div[data-alias="300x250 Ad 2"],
+         :root div[data-alias="300x250 Ad 1"],
+         :root div[data-adzone],
+         :root div[data-adunit-path],
+         :root div[data-ad-wrapper],
+         :root div[data-ad-targeting],
+         :root div[data-ad-placeholder],
+         :root div[class^="s-dfp-"],
+         :root div[class^="native-ad-"],
+         :root div[data-dfp-id],
+         :root div[class^="kiwi-ad-wrapper"],
+         :root div[class^="Adstyled__AdWrapper-"],
+         :root div[aria-label="Ads"],
+         :root display-ads,
+         :root aside[id^="advads_ad_widget-"],
+         :root aside[id^="adrotate_widgets-"],
+         :root article.ad,
+         :root div[class^="gpt-ad-hor"],
+         :root ark-top-ad,
+         :root app-advertisement,
+         :root amp-embed[type="taboola"],
+         :root amp-connatix-player,
+         :root amp-ad-custom,
+         :root ad-shield-ads,
+         :root ad-desktop-sidebar,
+         :root a[onmousedown^="this.href='https://paid.outbrain.com/network/redir?"][target="_blank"]+.ob_source,
+         :root a[onmousedown^="this.href='https://paid.outbrain.com/network/redir?"][target="_blank"],
+         :root a[onmousedown^="this.href='http://paid.outbrain.com/network/redir?"][target="_blank"]+.ob_source,
+         :root a[href^="https://www.vfreecams.com/in/?track="],
+         :root a[href^="https://www.rabbits.webcam/?id="],
+         :root a[href^="https://www.purevpn.com/"][href*="&utm_source=aff-"],
+         :root a[href^="https://www.privateinternetaccess.com/"]>img,
+         :root a[href^="https://www.passeura.com/"],
+         :root a[href^="https://www.oneclickroot.com/?tap_a="]>img,
+         :root a[href^="https://www.oboom.com/ref/"],
+         :root a[href^="https://www.nutaku.net/signup/landing/"],
+         :root a[href^="https://www.nudeidols.com/cams/"],
+         :root a[href^="https://www.mypornstarcams.com/landing/click/"],
+         :root a[href^="https://www.mrskin.com/account/"],
+         :root a[href^="https://www.kingsoffetish.com/tour?partner_id="],
+         :root a[href^="https://www.jackery.com?aff="]>img,
+         :root a[href^="https://www.iyalc.com/"],
+         :root a[href^="https://www.infowarsstore.com/"]>img,
+         :root a[href^="https://www.highperformancegate.com/"],
+         :root a[href^="https://www.healthrangerstore.com/"]>img,
+         :root a[href^="https://www.goldenfrog.com/vyprvpn?offer_id="][href*="&aff_id="],
+         :root a[href^="https://www.get-express-vpn.com/offer/"],
+         :root a[href^="https://www.financeads.net/tc.php?"],
+         :root a[href^="https://www.clicktraceclick.com/"],
+         :root a[href^="https://www.brazzersnetwork.com/landing/"],
+         :root div[class^="Display_displayAd"],
+         :root a[href^="https://www.sheetmusicplus.com/?aff_id="],
+         :root a[href^="https://www.bang.com/?aff="],
+         :root a[href^="https://www.arthrozene.com/"][href*="?tid="],
+         :root a[href^="https://www.adsexse.com/x/"],
+         :root a[href^="https://webroutetrk.com/"],
+         :root iframe[src^="http://ad.yieldmanager.com/"],
+         :root a[href^="https://wantopticalfreelance.com/"],
+         :root a[href^="https://waisheph.com/"],
+         :root a[href^="https://uncensored.game/"],
+         :root a[href^="https://twinrdsyn.com/"],
+         :root a[href^="https://ttf.trmobc.com/"],
+         :root a[href^="https://tsartech.g2afse.com/"],
+         :root a[href^="https://trusted-click-host.com/"],
+         :root a[href^="https://trk.watchlivesports4k.club/"],
+         :root a[href^="https://trk.moviesflix4k.xyz/"],
+         :root a[href^="https://trf.bannerator.com/"],
+         :root a[href^="https://trappist-1d.com/"],
+         :root a[href^="https://tragency-clesburg.icu/"],
+         :root a[href^="https://traffdaq.com/"],
+         :root a[href^="https://tracking.trackcasino.co/"],
+         :root a[href^="https://tracking.comfortclick.eu/"],
+         :root a[href^="https://tracking.avapartner.com/"],
+         :root a[href^="https://track.ultravpn.com/"],
+         :root a[href^="https://track.totalav.com/"],
+         :root a[href^="https://track.themadtrcker.com/"],
+         :root a[href^="https://track.interactivegf.com/"],
+         :root a[href^="https://vlnk.me/"],
+         :root a[href^="https://track.healthtrader.com/"],
+         :root a[href^="https://track.effiliation.com/servlet/effi.click?"]>img,
+         :root zeus-ad,
+         :root a[href^="https://track.clickmoi.xyz/"],
+         :root a[href^="https://track.afcpatrk.com/"],
+         :root a[href^="https://tupitea.co/"],
+         :root a[href^="https://track.adform.net/"],
+         :root a[href^="https://torguard.net/aff.php"]>img,
+         :root a[href^="https://tm-offers.gamingadult.com/"],
+         :root div[data-adname],
+         :root a[href^="https://thechleads.pro/"],
+         :root a[href^="https://tracking.gitads.io/"],
+         :root a[href^="https://taghaugh.com/"],
+         :root a[href^="https://t.mobtya.com/"],
+         :root a[href^="https://t.hrtyj.com/"],
+         :root a[href^="https://www.profitablecpmgate.com/"],
+         :root a[href^="https://t.adating.link/"],
+         :root a[href^="https://topoffers.com/"][href*="/?pid="],
+         :root a[href^="https://syndication.dynsrvtbg.com/"],
+         :root a[href^="https://streamate.com/landing/click/"],
+         :root a[href^="https://s.zlink2.com/"],
+         :root a[href^="https://reachtrgt.com/"],
+         :root a[href^="https://queersodadults.com/"],
+         :root a[href^="https://ptapjmp.com/"],
+         :root a[href^="https://promo-bc.com/"],
+         :root a[href^="https://prf.hn/click/"][href*="/camref:"]>img,
+         :root a[href^="https://serve.awmdelivery.com/"],
+         :root a[href^="https://prf.hn/click/"][href*="/adref:"]>img,
+         :root a[href^="https://pongidsrunback.com/"],
+         :root a[href^="https://pcm.bannerator.com/"],
+         :root iframe[id^="google_ads_frame"],
+         :root a[href^="https://pb-track.com/"],
+         :root a[href^="https://partners.fxoro.com/click.php?"],
+         :root a[href^="https://paid.outbrain.com/network/redir?"],
+         :root a[href^="https://torrentsafeguard.com/?aid="],
+         :root a[href^="https://offers.refchamp.com/"],
+         :root a[href^="https://oackoubs.com/"],
+         :root a[href^="https://track.wg-aff.com"],
+         :root a[href^="https://nutrientassumptionclaims.com/"],
+         :root a[href^="https://ndt5.net/"],
+         :root a[href^="https://natour.naughtyamerica.com/track/"],
+         :root a[href^="https://www.highperformancecpmgate.com/"],
+         :root a[href^="https://t.grtyi.com/"],
+         :root a[href^="https://myusenet.xyz/"],
+         :root a[href^="https://msecure117.com/"],
+         :root a[href^="https://moneynow.one/"],
+         :root div[id^="ezoic-pub-ad-"],
+         :root a[href^="https://mk-cdn.net/"],
+         :root .trc_rbox_div .syndicatedItemUB,
+         :root [href^="https://zone.gotrackier.com/"],
+         :root a[href^="https://meet-to-fuck.com/"],
+         :root [href^="https://www.herbanomic.com/"]>img,
+         :root a[href^="https://maymooth-stopic.com/"],
+         :root div[id^="google_dfp_"],
+         :root a[href^="http://googleads.g.doubleclick.net/pcs/click"],
+         :root a[href^="https://look.utndln.com/"],
+         :root a[href^="https://a.bestcontentweb.top/"],
+         :root a[href^="https://lobimax.com/"],
+         :root a[href^="https://lead1.pl/"],
+         :root a[href^="https://refpazkjixes.top/"],
+         :root a[href^="https://landing.brazzersplus.com/"],
+         :root a[href^="https://landing.brazzersnetwork.com/"],
+         :root a[href^="https://ads.leovegas.com/redirect.aspx?"],
+         :root a[href^="https://land.brazzersnetwork.com/landing/"],
+         :root a[href^="https://juicyads.in/"],
+         :root a[href^="https://itubego.com/video-downloader/?affid="],
+         :root a[href^="https://movie.download-file.org/"],
+         :root a[href^="https://iqbroker.com/"][href*="?aff="],
+         :root a[href^="https://incisivetrk.cvtr.io/click?"],
+         :root a[href^="https://iac.ampxdirect.com/"],
+         :root [data-revive-zoneid],
+         :root a[href^="https://googleads.g.doubleclick.net/pcs/click"],
+         :root a[href^="https://go.zybrdr.com"],
+         :root [href^="http://join.michelle-austin.com/"],
+         :root a[href^="https://go.xxxiijmp.com"],
+         :root a[href*=".zlinkm.com/"],
+         :root a[href^="https://go.xtbaffiliates.com/"],
+         :root a[href^="https://thaudray.com/"],
+         :root [data-role="tile-ads-module"],
+         :root a[href^="https://adsrv4k.com/"],
+         :root a[href^="https://go.xlviirdr.com"],
+         :root .card-captioned.crd>.crd--cnt>.s2nPlayer,
+         :root [data-css-class="dfp-inarticle"],
+         :root a[href^="https://go.tmrjmp.com"],
+         :root a[href^="https://refpa4903566.top/"],
+         :root a[href^="https://go.strpjmp.com/"],
+         :root a[href^="https://go.skinstrip.net"][href*="?campaignId="],
+         :root a[href^="https://go.markets.com/visit/?bta="],
+         :root a[href^="//lambingsyddir.com/"],
+         :root a[href^="https://billing.purevpn.com/aff.php"]>img,
+         :root a[href^="https://go.hpyrdr.com/"],
+         :root a[href^="https://go.goaserv.com/"],
+         :root a[href^="https://go.ebrokerserve.com/"],
+         :root a[href^="https://go.dmzjmp.com"],
+         :root a[href^="https://ismlks.com/"],
+         :root [href^="https://www.mypillow.com/"]>img,
+         :root a[href^="https://azpresearch.club/"],
+         :root a[href^="https://go.xlirdr.com"],
+         :root app-ad,
+         :root a[href^="https://track.afftck.com/"],
+         :root a[href^="https://gohere.pl/"],
+         :root a[href^="https://go.cmrdr.com/"],
+         :root a[href^="https://www.bebi.com"],
+         :root a[href^="https://loboclick.com"],
+         :root iframe[src^="https://pagead2.googlesyndication.com/"],
+         :root a[href^="http://www.onwebcam.com/random?t_link="],
+         :root a[href^="https://get2nesoft1.ru/"],
+         :root [href^="https://kingered-banctours.com/"],
+         :root a[href^="https://get.surfshark.net/aff_c?"][href*="&aff_id="]>img,
+         :root a-ad,
+         :root a[href^="https://affiliate.rusvpn.com/click.php?"],
+         :root a[href^="https://geniusdexchange.com/"],
+         :root a[href^="https://aj1070.online/"],
+         :root a[href^="https://frameworkdeserve.com/"],
+         :root a[href^="https://www.mrskin.com/tour"],
+         :root a[href^="https://financeads.net/tc.php?"],
+         :root bottomadblock,
+         :root a[href^="https://fertilitycommand.com/"],
+         :root a[href^="https://bluedelivery.pro/"],
+         :root a[href^="https://fast-redirecting.com/"],
+         :root a[href^="https://fakelay.com/"],
+         :root a[href^="https://medleyads.com/"],
+         :root div[data-native-ad],
+         :root a[href^="https://engine.trackingdesks.com/"],
+         :root a[href^="https://engine.blueistheneworanges.com/"],
+         :root a[href^="https://tc.tradetracker.net/"]>img,
+         :root a[href^="https://dianches-inchor.com/"],
+         :root a[href^="https://go.admjmp.com/"],
+         :root amp-fx-flying-carpet,
+         :root a[href^="https://dfsdkkka.com/"],
+         :root .trc_related_container div[data-item-syndicated="true"],
+         :root a[href^="https://delivery.porn.com/"],
+         :root .ob_dual_right>.ob_ads_header~.odb_div,
+         :root a[href^="https://deliver.tf2www.com/"],
+         :root [href^="https://www.targetingpartner.com/"],
+         :root [href^="https://detachedbates.com/"],
+         :root a[href^="https://deliver.ptgncdn.com/"],
+         :root a[href^="https://datingbests.life/"],
+         :root #kt_player>a[target="_blank"],
+         :root a[href^="https://cpartner.bdswiss.com/"],
+         :root a[href^="https://clixtrac.com/"],
+         :root AD-TRIPLE-BOX,
+         :root a[href^="https://click.hoolig.app/"],
+         :root img[src^="https://images.purevpnaffiliates.com"],
+         :root a[href^="https://porntubemate.com/"],
+         :root a[href^="http://www.gfrevenge.com/landing/"],
+         :root a[href^="https://clickadilla.com/"],
+         :root a[href^="https://click.dtiserv2.com/"],
+         :root a[href^="https://go.xlvirdr.com"],
+         :root a[href^="https://claring-loccelkin.com/"],
+         :root a[href^="https://chaturbate.com/in/?track="],
+         :root a[href^="https://chaturbate.com/in/?tour="],
+         :root a[href^="https://aaucwbe.com/"],
+         :root a[href^="https://cams.imagetwist.com/in/?track="],
+         :root a[href^="https://mob1ledev1ces.com/"],
+         :root a[href^="https://explore.findanswersnow.net/"],
+         :root a[href^="https://camfapr.com/landing/click/"],
+         :root a[href^="https://my-movie.club/"],
+         :root a[href^="https://cam4com.go2cloud.org/"],
+         :root a[href^="https://affcpatrk.com/"],
+         :root a[href^="https://bongacams2.com/track?"],
+         :root a[href^="https://www.sheetmusicplus.com/"][href*="?aff_id="],
+         :root a[href^="https://bngpt.com/"],
+         :root #topstuff>#tads,
+         :root a[href^="https://black77854.com/"],
+         :root a[href^="https://burpee.xyz/"],
+         :root a[href*=".flndmyiove.net/"],
+         :root [href^="http://join.trannies-fuck.com/"],
+         :root [href^="http://www.fleshlightgirls.com/"],
+         :root a[href^="https://bestdatinghere.life/"],
+         :root a[target="_blank"][onmousedown="this.href^='http://paid.outbrain.com/network/redir?"],
+         :root a[href^="https://banners.livepartners.com/"],
+         :root a[href^="https://m.do.co/c/"]>img,
+         :root div[id^="sticky_ad_"],
+         :root a[href^="https://avtub.click/assets/link.php"],
+         :root a[href^="https://go.gldrdr.com/"],
+         :root [id^="ad_sky"],
+         :root a[href^="https://funkydaters.com/"],
+         :root [href^="https://www.cloudways.com/en/?id"],
+         :root a[href^="https://as.sexad.net/"],
+         :root a[href^="https://bestcond1tions.com/"],
+         :root a[href^="https://takeallsoft.ru/"],
+         :root a[href^="https://as.conjectwatson.com/"],
+         :root [href="https://masstortfinancing.com"] img,
+         :root a[href^="https://bongacams10.com/track?"],
+         :root [data-ez-name],
+         :root a[href^="https://awecrptjmp.com/"],
+         :root a[href^="https://someperceptionparade.com/"],
+         :root a[href^="https://galaxyroms.net/?scr="],
+         :root a[href^="https://albionsoftwares.com/"],
+         :root display-ad-component,
+         :root a[href^="https://ak.hetaruwg.com/"],
+         :root a[href^="https://go.etoro.com/"]>img,
+         :root a[href^="https://go.alxbgo.com/"],
+         :root a[href^="https://aff-ads.stickywilds.com/"],
+         :root a[href^="https://t.hrtye.com/"],
+         :root a[href^="https://ads.cdn.live/"],
+         :root a[href^="https://join.sexworld3d.com/track/"],
+         :root a[href^="https://intenseaffiliates.com/redirect/"],
+         :root a[href^="https://aweptjmp.com/"],
+         :root a[href^="https://ads.ad4game.com/"],
+         :root a[href^="https://affpa.top/"],
+         :root a[href^="https://adnetwrk.com/"],
+         :root a[href^="https://adjoincomprise.com/"],
+         :root [href^="http://misslinkvocation.com/"],
+         :root a[href^="https://adclick.g.doubleclick.net/"],
+         :root a[href^="http://secure.vivid.com/track/"],
+         :root a[href^="https://go.nordvpn.net/aff"]>img,
+         :root [href^="http://clicks.totemcash.com/"],
+         :root a[href^="https://misspkl.com/"],
+         :root a[href^="https://ad.zanox.com/ppc/"]>img,
+         :root a[href^="https://ad.kubiccomps.icu/"],
+         :root a[href^="https://adswick.com/"],
+         :root a[href^="https://static.fleshlight.com/images/banners/"],
+         :root a[href^="https://ad.doubleclick.net/"],
+         :root a[href^="https://ad.atdmt.com/"],
+         :root a[href^="https://meet-sex-here.com/"],
+         :root a[href^="https://iactrivago.ampxdirect.com/"],
+         :root a[href^="https://a.medfoodhome.com/"],
+         :root [data-m-ad-id],
+         :root a[href^="https://a-ads.com/"],
+         :root a[href^="http://www.mrskin.com/tour"],
+         :root a[href^="https://k2s.cc/pr/"],
+         :root a[data-url^="http://paid.outbrain.com/network/redir?"],
+         :root a[href^="http://www.coiwqe.site/"],
+         :root iframe[src^="http://www.adpeepshosted.com/"],
+         :root a[href^="https://prf.hn/click/"][href*="/creativeref:"]>img,
+         :root a[href^="http://www.adultempire.com/unlimited/promo?"][href*="&partner_id="],
+         :root a[href^="https://ads-for-free.com/click.php?"],
+         :root a[href^="http://www.FriendlyDuck.com/"],
+         :root a[href^="http://traffic.tc-clicks.com/"],
+         :root a[href^="http://tc.tradetracker.net/"]>img,
+         :root .trc_rbox .syndicatedItem,
+         :root a[href^="https://1free33style.com/"],
+         :root a[href^="http://rs-stripe.wsj.com/stripe/redirect"],
+         :root a[href^="http://tour.mrskin.com/"],
+         :root a[href^="http://pubads.g.doubleclick.net/"],
+         :root [onclick*="content.ad/"],
+         :root a[href^="http://pityhostngco2.xyz/"],
+         :root a[href^="http://partners.etoro.com/"],
+         :root .commercial-unit-mobile-top .jackpot-main-content-container>.UpgKEd+.nZZLFc>div>.vci,
+         :root a[href^="http://paid.outbrain.com/network/redir?"],
+         :root a[data-redirect^="https://paid.outbrain.com/network/redir?"],
+         :root [href^="https://www.reimageplus.com/"],
+         :root a[href^="https://engine.phn.doublepimp.com/"],
+         :root a[href^="http://intent.bingads.com/"],
+         :root a[href^="https://cagothie.net/"],
+         :root a[href^="https://watchmygirlfriend.tv/"],
+         :root a[href^="http://go.xtbaffiliates.com/"],
+         :root a[href^="http://go.fpmarkets.com/"],
+         :root a[href^="https://porngames.adult/?SID="],
+         :root a[href^="http://go.247traffic.com/"],
+         :root a[href^="http://www.advcashpro.com/aff/"],
+         :root a[href^="http://deloplen.com/"],
+         :root a[href^="http://d2.zedo.com/"],
+         :root .rc-cta[data-target],
+         :root [href^="http://go.cm-trk2.com/"],
+         :root a[href^="http://adtrack1.club/"],
+         :root a[href^="http://click.payserve.com/"],
+         :root a[href^="https://bs.serving-sys.com"],
+         :root [class^="chp_ads_block"],
+         :root a[href^="http://betahit.click/"],
+         :root a[href^="https://clicks.pipaffiliates.com/"],
+         :root [href^="https://noqreport.com/"]>img,
+         :root a[href^="//wagerprocuratorantiterrorist.com/"],
+         :root a[href^="http://adserver.adreactor.com/"],
+         :root [href^="https://cipledecline.buzz/"],
+         :root a[href^="https://earandmarketing.com/"],
+         :root a[href^="http://adf.ly/?id="],
+         :root [href^="http://homemoviestube.com/"],
+         :root a[href^="http://ad.doubleclick.net/"],
+         :root .commercial-unit-mobile-top .jackpot-main-content-container>.UpgKEd+.nZZLFc>.vci,
+         :root a[href^="//syndication.dynsrvtbg.com/"],
+         :root a[href^="//pubads.g.doubleclick.net/"],
+         :root a[href^="http://m.hsrve.com/"],
+         :root [class^="s2nPlayer"],
+         :root a[href^="https://chaturbate.jjgirls.com/?track="],
+         :root a[href^="https://ausoafab.net/"],
+         :root a[href^="//benoopto.com/"],
+         :root [id^="ad-wrap-"],
+         :root [href^="https://www.restoro.com/"],
+         :root a[href^="//apptjmp.com/"],
+         :root a[href^="https://dooloust.net/"],
+         :root [href^="https://www.mypatriotsupply.com/"]>img,
+         :root a[onmousedown^="this.href='http://paid.outbrain.com/network/redir?"][target="_blank"],
+         :root [href^="https://secure.bmtmicro.com/servlets/"],
+         :root a[href="//rufflycouncil.com/"],
+         :root a[href*="https://www.sweetdeals.com/"] img,
+         :root div[data-native_ad],
+         :root a[href*=".zlink9.com/"],
+         :root [data-d-ad-id],
+         :root a[href*=".engine.adglare.net/"],
+         :root a[href^="https://a.bestcontentoperation.top/"],
+         :root a[href^="https://dishphysics.com/"],
+         :root a[href^="//go.xlviiirdr.com"],
+         :root [data-dynamic-ads],
+         :root a[data-widget-outbrain-redirect^="http://paid.outbrain.com/network/redir?"],
+         :root [data-ad-width],
+         :root [href^="https://join.playboyplus.com/track/"],
+         :root a[data-url^="http://paid.outbrain.com/network/redir?"]+.author,
+         :root a[href^="https://landing1.brazzersnetwork.com"],
+         :root #slashboxes>.deals-rail,
+         :root [href^="http://globsads.com/"],
+         :root [href^="https://www.brighteonstore.com/products/"] img,
+         :root a[href^="http://bc.vc/?r="],
+         :root a[href^="https://a2.adform.net/"],
+         :root a[href^="http://www.adultdvdempire.com/?partner_id="][href*="&utm_"],
+         :root [href^="https://clk.right-wing-health.com/"],
+         :root a[data-redirect^="http://paid.outbrain.com/network/redir?"],
+         :root a[href^="https://axdsz.pro/"],
+         :root a[href^="http://bodelen.com/"],
+         :root a[data-oburl^="https://paid.outbrain.com/network/redir?"],
+         :root a[href^="http://allaptair.club/"],
+         :root a[href^="//go.eabids.com/"],
+         :root a[data-oburl^="http://paid.outbrain.com/network/redir?"],
+         :root [href^="https://cpa.10kfreesilver.com/"],
+         :root a[href^="https://a.bestcontentfood.top/"],
+         :root a[href^="https://reinstandpointdumbest.com/"],
+         :root a[href*="http://MyPillow.com"]>img,
+         :root a[data-obtrack^="http://paid.outbrain.com/network/redir?"],
+         :root a[href^="http://wct.link/"],
+         :root [href^="https://goldforyourfuture.com/clk.trk"] img,
+         :root [href^="https://infinitytrk.com/"],
+         :root [onclick^="location.href='http://www.reimageplus.com"],
+         :root a[href^="https://pl.premium4kflix.website/"],
+         :root [id^="chp_ads_block"],
+         :root a[href^="https://go.julrdr.com/"],
+         :root a[href^="//chrif8kdstie.com/"],
+         :root [id^="section-ad-banner"],
+         :root .commercial-unit-mobile-top>div[data-pla="1"],
+         :root a[href^="https://www.sweetdeals.com"],
+         :root a[href^="https://track.bruceads.com/"],
+         :root a[href^="https://t.aslnk.link/"],
+         :root [href^="https://zstacklife.com/"] img,
+         :root [data-ad-manager-id],
+         :root a[href^="https://fleshlight.sjv.io/"],
+         :root div[id^="zergnet-widget"],
+         :root [href^="https://www.mystore.com/"]>img,
+         :root div[id^="ad-position-"],
+         :root a[href^="http://adultfriendfinder.com/go/page/landing"],
+         :root a[href^="http://affiliate.glbtracker.com/"],
+         :root a[href^="https://leg.xyz/?track="],
+         :root a[href^="https://syndication.exoclick.com/"],
+         :root [href^="https://track.fiverr.com/visit/"]>img,
+         :root a[href^="https://go.trackitalltheway.com/"],
+         :root a[href^="https://go.cmtaffiliates.com/"],
+         :root [data-name="adaptiveConstructorAd"],
+         :root [href^="https://optimizedelite.com/"]>img,
+         :root a[href^="https://www.awin1.com/cread.php?awinaffid="],
+         :root a[href^="//thaudray.com/"],
+         :root div[id^="crt-"][style],
+         :root a[href^="https://s.zlink1.com/"],
+         :root a[href^="http://adultgames.xxx/"],
+         :root a[href^="https://traffic.bannerator.com/"],
+         :root [href^="https://shiftnetwork.infusionsoft.com/go/"]>img,
+         :root a[href^="https://vo2.qrlsx.com/"],
+         :root [href^="https://www.avantlink.com/click.php"] img,
+         :root a[href^="https://losingoldfry.com/"],
+         :root div[id^="ad-inserter-"],
+         :root .scroll-fixable.rail-right>.deals-rail,
+         :root a[href^="https://see.kmisln.com/"],
+         :root [href^="https://routewebtk.com/"],
+         :root a[href^="https://www.bet365.com/"][href*="affiliate="],
+         :root a[href^="https://mmwebhandler.aff-online.com/"],
+         :root [href^="https://r.kraken.com/"],
+         :root a[href^="https://awptjmp.com/"],
+         :root a[href^="https://go.goasrv.com/"],
+         :root .commercial-unit-mobile-top>.v7hl4d,
+         :root [href^="http://mypillow.com/"]>img,
+         :root a[href^="http://bongacams.com/track?"],
+         :root a[href^="https://mediaserver.entainpartners.com/renderBanner.do?"],
+         :root [href^="https://stvkr.com/"],
+         :root a[href^="https://go.hpyjmp.com"],
+         :root a[href^="https://tour.mrskin.com/"],
+         :root a[href^="https://fastestvpn.com/lifetime-special-deal?a_aid="],
+         :root ADS-RIGHT,
+         :root [href^="https://mystore.com/"]>img,
+         :root [href^="https://mypatriotsupply.com/"]>img,
+         :root [href^="https://mylead.global/stl/"]>img,
+         :root div[id^="ad_rect_"],
+         :root .vid-present>.van_vid_carousel__padding,
+         :root a[href^="https://syndication.optimizesrv.com/"],
+         :root [id^="google_ads_iframe"],
+         :root a[href^="https://go.xxxijmp.com"],
+         :root [href^="https://istlnkcl.com/"],
+         :root a[href^="https://playuhd.host/"],
+         :root a[href^="https://5hjdbfjfd5.monster/"],
+         :root [href^="https://www.hostg.xyz/"]>img,
+         :root .section-subheader>.section-hotel-prices-header,
+         :root [href^="http://join.ts-dominopresley.com/"],
+         :root [href^="https://go.affiliatexe.com/"],
+         :root a[href^="https://meet-sexhere.com/"],
+         :root [href^="https://go.4rabettraff.com/"],
+         :root [href^="https://glersakr.com/"],
+         :root a[href^="https://click.a-ads.com/"],
+         :root a[href^="https://wittered-mainging.com/"],
+         :root [href^="https://engine.gettopple.com/"],
+         :root [href^="https://awbbjmp.com/"],
+         :root a[href^="https://gghf.mobi/"],
+         :root [href^="https://affect3dnetwork.com/track/"],
+         :root a[href^="https://go.currency.com/"],
+         :root [href^="http://www.mypillow.com/"]>img,
+         :root a[href^="//coarsewary.com/"],
+         :root a[href^="https://a.montangop.top/"],
+         :root [href^="https://v.investologic.co.uk/"],
+         :root a[href^="https://dialling-abutory.com/"],
+         :root div[id^="div-ads-"],
+         :root [href^="https://rapidgator.net/article/premium/ref/"],
+         :root a[href^="https://www.sugarinstant.com/?partner_id="],
+         :root a[href^="https://adultfriendfinder.com/go/page/landing"],
+         :root div[id^="advads-"],
+         :root div[data-role="sidebarAd"],
+         :root [href^="https://join3.bannedsextapes.com"],
+         :root div[data-spotim-slot],
+         :root [href^="https://antiagingbed.com/discount/"]>img,
+         :root a[href^="https://go.247traffic.com/"],
+         :root [href^="https://join.girlsoutwest.com/"],
+         :root [href^="http://trafficare.net/"],
+         :root a[href^="https://adserver.adreactor.com/"],
+         :root [href^="http://join.shemalesfromhell.com/"],
+         :root [id^="ad_slider"],
+         :root [href^="http://join.shemale.xxx/"],
+         :root [href^="https://ilovemyfreedoms.com/landing-"],
+         :root a[href^="https://ads.betfair.com/redirect.aspx?"],
+         :root a[href^="http://cam4com.go2cloud.org/aff_c?"],
+         :root a[href^="https://www.chngtrack.com/"],
+         :root a[href^="https://cpmspace.com/"],
+         :root [href^="https://freecourseweb.com/"]>.sitefriend,
+         :root a[href^="https://ads.planetwin365affiliate.com/redirect.aspx?"],
+         :root [href^="http://join.rodneymoore.com/"],
+         :root a[href^="http://trk.mdrtrck.com/"],
+         :root [href^="https://shrugartisticelder.com"],
+         :root a[href*=".trust.zone"],
+         :root a[href^="https://uncensored3d.com/"],
+         :root a[href^="https://creacdn.top-convert.com/"],
+         :root [href^="https://go.xlrdr.com"],
+         :root [id^="div-gpt-ad"],
+         :root .ob_container .item-container-obpd,
+         :root [href^="http://www.pingperfect.com/aff.php"],
+         :root a[href^="https://scurewall.co/"],
+         :root [name^="google_ads_iframe"],
+         :root [href^="//ngeoziadiyc4hi2e.com/"],
+         :root a[href^="https://go.xxxjmp.com"],
+         :root a[href^="https://transfer.xe.com/signup/track/redirect?"],
+         :root #leader-companion>a[href],
+         :root [data-desktop-ad-id],
+         :root [href^="https://wct.link/"],
+         :root [href^="https://traffserve.com/"],
+         :root a[href^="https://1startfiledownload1.com/"],
+         :root a[href^="https://a.adtng.com/"],
+         :root a[href^="http://static.fleshlight.com/images/banners/"],
+         :root [href="https://ourgoldguy.com/contact/"] img,
+         :root [href="https://www.masstortfinancing.com/"]>img,
+         :root a[href^="https://lnkxt.bannerator.com/"],
+         :root div[id^="ad_position_"],
+         :root a[href^="https://ovb.im/"],
+         :root a[href^="http://hotcandyland.com/partner/"],
+         :root [href="https://jdrucker.com/gold"]>img,
+         :root [href^="https://goldcometals.com/clk.trk"],
+         :root [data-mobile-ad-id],
+         :root a[href^="http://affiliates.thrixxx.com/"],
+         :root #searchResultsList>div>div[onclick$="'inline.ad'});"],
+         :root a[href^="https://www.adultempire.com/"][href*="?partner_id="],
+         :root [data-template-type="nativead"],
+         :root a[data-redirect^="this.href='http://paid.outbrain.com/network/redir?"],
+         :root a[href^="https://go.xlivrdr.com"],
+         :root a[href^="https://www.onlineusershielder.com/torrent-guard/?"],
+         :root [data-freestar-ad],
+         :root div[id^="_vdo_ads_player_ai_"],
+         :root a[href^="http://enter.anabolic.com/track/"],
+         :root AMP-AD,
+         :root [data-ad-cls],
+         :root div[id^="taboola-stream-"],
+         :root [href^="https://go.astutelinks.com/"],
+         :root [href^="http://join.hardcoreshemalevideo.com/"],
+         :root a[href^="http://ads2.williamhill.com/redirect.aspx?"],
+         :root [href^="http://residenceseeingstanding.com/"],
+         :root a[href^="https://www.adskeeper.com"],
+         :root a[href^="//agacelebir.com/"],
+         :root [href^="https://totlnkcl.com/"],
+         :root div[data-adunit],
+         :root app-large-ad,
+         :root [href^="https://turtlebids.irauctions.com/"] img,
+         :root a[href^="http://www.onclickmega.com/jump/next.php?"],
+         :root .trc_rbox_border_elm .syndicatedItem,
+         :root [class^="amp-ad-"],
+         :root .grid>.container>#aside-promotion,
+         :root DFP-AD,
+         :root a[href^="https://www.camsoda.com/enter.php?id="],
+         :root AD-SLOT,
+         :root a[href^="https://www.liquidfire.mobi/"],
+         :root [href^="https://click2cvs.com/"],
+         :root [href^="https://mypillow.com/"]>img,
+         :root [href^="https://ad.admitad.com/"],
+         :root [href^="http://join.shemalepornstar.com/"],
+         :root a[href^="https://go.xlviiirdr.com"],
+         :root .trc_rbox_div .syndicatedItem,
+         :root [data-ad-module],
+         :root [href^="https://trackfin.asia/"],
+         :root .plistaList>.plista_widget_underArticle_item[data-type="pet"],
+         :root a[href^="https://spygasm.com/track?"],
+         :root a[href^="https://agacelebir.com/"],
+         :root a[href*="//lkstrck2.com/"],
+         :root .plistaList>.itemLinkPET,
+         :root [data-advadstrackid],
+         :root [href^="https://affiliate.fastcomet.com/"]>img,
+         :root #atvcap+#tvcap>.mnr-c>.commercial-unit-mobile-top,
+         :root a[href^="https://www.googleadservices.com/pagead/aclk?"],
+         :root a[href^="https://awentw.com/"],
+         :root [class^="div-gpt-ad"],
+         :root a[href^="//voyeurhit.com/cs/"],
+         :root div[id^="ad_bnr_"],
+         :root a[href^="https://join.virtuallust3d.com/"],
+         :root a[href^="https://speedsupermarketdonut.com/"],
+         :root #taw>.med+div>#tvcap>.mnr-c:not(.qs-ic)>.commercial-unit-mobile-top,
+         :root [data-adblockkey],
+         :root div.fadeInDown[id$="____equal"][class$="____equal"],
+         :root a[href^="https://mediaserver.gvcaffiliates.com/renderBanner.do?"],
+         :root a[href^="https://join.dreamsexworld.com/"],
+         :root a[href^="https://odnxe.lncredlbiedate.com/"],
+         :root a[href^="https://click.linksynergy.com/fs-bin/"],
+         :root a[href^="https://join.virtualtaboo.com/track/"],
+         :root a[href^="http://https://www.get-express-vpn.com/offer/"],
+         :root a[href^="https://americafirstpolls.com/"] {
+            display: none !important;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="content">
+        <header>
+            <nav class="navbar navbar-expand-lg fixed-top navbar-dark  bg-custom shadow-navbar">
+                <div class="container">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="Resized_logo.png" width="60" alt="logo icon" class="rounded">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    <div class="collapse navbar-collapse menu-utama" id="navbarNavAltMarkup">
+                        <div class="navbar-nav ml-auto">
+                            <a class="nav-item nav-link active" href="index.html">Home</a>
+                            <a class="nav-item nav-link " href="pesanan.html">Cek Pesanan</a>
+                            <div class="dropdown">
+                                <a class="nav-link" href="#" role="button" id="dropdownMenuLink" onclick="toggleDropdown()">
+                                    Daftar Harga
+                                </a>
+                                <div class="dropdown-menu" id="dropdownMenu" aria-labelledby="dropdownMenuLink">
+                                    <a class="dropdown-item" href="list-MLBB.html">Mobile Legends</a>
+                                    <a class="dropdown-item" href="list-FF.html">Free Fire</a>
+                                    <a class="dropdown-item" href="list-PUBG.html">PUBG Mobile</a>
+                                    <a class="dropdown-item" href="list-Domino.html">Higgs Domino</a>
+                                    <a class="dropdown-item" href="list-PES.html">E Football PES</a>
+                                    <a class="dropdown-item" href="list-Genshin.html">Genshin Impact</a>
+                                    <a class="dropdown-item" href="list-Apex.html">Apex Legends Mobile</a>
+                                    <a class="dropdown-item" href="list-DragonRaja.html">Dragon Raja</a>
+                                    <a class="dropdown-item" href="list-COC.html">Clash of Clans</a>
+                                    <a class="dropdown-item" href="list-Telkomsel.html">Telkomsel</a>
+                                </div>
+                            </div>
+
+                            <script>
+                                function toggleDropdown() {
+                                    var dropdown = document.getElementById("dropdownMenu");
+                                    if (dropdown.style.display === "block") {
+                                        dropdown.style.display = "none";
+                                    } else {
+                                        dropdown.style.display = "block";
+                                    }
+                                }
+                            </script>
+                            <a class="nav-item nav-link " href="method.html">Metode Pembayaran</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <div class="mb-4 gov-car">
+            <div class="container">
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    </ol>
+                    <div class="carousel-inner" style="border-radius: 16px;">
+                        <div class="carousel-item active">
+                            <img class="d-block w-100" src="Banner.jpg" alt="First slide">
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="container pt-4 pb-4" id="games">
+            <div class="row">
+                <div class="col-12">
+                    <h5>Games</h5>
+                    <span class="strip-primary"></span>
+                </div>
+            </div>
+        </div>
+        <div class="pb-4">
+            <div class="container">
+                <div class="row game">
+                    <div class="col-sm-3 col-lg-3 col-4 text-center">
+                        <div class="card mb-3">
+                            <a href="games-MLBB.html" class="product_list">
+                                <div class="card-game" bis_skin_checked="1">
+                                    <img src="ml.jpg" class="img-fluid" style="border-radius: 10px; display: block;box-shadow: 2px 10px 10px #c9c9c9;">
+                                </div>
+                                <div class="card-title" bis_skin_checked="1"> Mobile Legends </div>
+                                <div class="card-subtitle" bis_skin_checked="1"></div>
+                                <div class="card-topup" bis_skin_checked="1" hidden="">
+                                    <div class="btn-topup" style="font-size: 0.60rem!important;" bis_skin_checked="1"> TOP UP </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 col-lg-3 col-4 text-center">
+                        <div class="card mb-3">
+                            <a href="games-FF.html" class="product_list">
+                                <div class="card-game" bis_skin_checked="1">
+                                    <img src="ff.jpg" class="img-fluid" style="border-radius: 10px; display: block;box-shadow: 2px 10px 10px #c9c9c9;">
+                                </div>
+                                <div class="card-title" bis_skin_checked="1"> Free Fire </div>
+                                <div class="card-subtitle" bis_skin_checked="1"></div>
+                                <div class="card-topup" bis_skin_checked="1" hidden="">
+                                    <div class="btn-topup" style="font-size: 0.60rem!important;" bis_skin_checked="1"> TOP UP </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 col-lg-3 col-4 text-center">
+                        <div class="card mb-3">
+                            <a href="games-PUBG.html" class="product_list">
+                                <div class="card-game" bis_skin_checked="1">
+                                    <img src="pubg.jpg" class="img-fluid" style="border-radius: 10px; display: block;box-shadow: 2px 10px 10px #c9c9c9;">
+                                </div>
+                                <div class="card-title" bis_skin_checked="1"> PUBG Mobile </div>
+                                <div class="card-subtitle" bis_skin_checked="1"></div>
+                                <div class="card-topup" bis_skin_checked="1" hidden="">
+                                    <div class="btn-topup" style="font-size: 0.60rem!important;" bis_skin_checked="1"> TOP UP </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 col-lg-3 col-4 text-center">
+                        <div class="card mb-3">
+                            <a href="games-Domino.html" class="product_list">
+                                <div class="card-game" bis_skin_checked="1">
+                                    <img src="domino.jpg" class="img-fluid" style="border-radius: 10px; display: block;box-shadow: 2px 10px 10px #c9c9c9;">
+                                </div>
+                                <div class="card-title" bis_skin_checked="1"> Higgs Domino </div>
+                                <div class="card-subtitle" bis_skin_checked="1"></div>
+                                <div class="card-topup" bis_skin_checked="1" hidden="">
+                                    <div class="btn-topup" style="font-size: 0.60rem!important;" bis_skin_checked="1"> TOP UP </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 col-lg-3 col-4 text-center">
+                        <div class="card mb-3">
+                            <a href="games-PES.html" class="product_list">
+                                <div class="card-game" bis_skin_checked="1">
+                                    <img src="pes.png" class="img-fluid" style="border-radius: 10px; display: block;box-shadow: 2px 10px 10px #c9c9c9;">
+                                </div>
+                                <div class="card-title" bis_skin_checked="1"> E Football PES </div>
+                                <div class="card-subtitle" bis_skin_checked="1"></div>
+                                <div class="card-topup" bis_skin_checked="1" hidden="">
+                                    <div class="btn-topup" style="font-size: 0.60rem!important;" bis_skin_checked="1"> TOP UP </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 col-lg-3 col-4 text-center">
+                        <div class="card mb-3">
+                            <a href="games-Genshin.html" class="product_list">
+                                <div class="card-game" bis_skin_checked="1">
+                                    <img src="genshin.jpg" class="img-fluid" style="border-radius: 10px; display: block;box-shadow: 2px 10px 10px #c9c9c9;">
+                                </div>
+                                <div class="card-title" bis_skin_checked="1"> Genshin Impact </div>
+                                <div class="card-subtitle" bis_skin_checked="1"></div>
+                                <div class="card-topup" bis_skin_checked="1" hidden="">
+                                    <div class="btn-topup" style="font-size: 0.60rem!important;" bis_skin_checked="1"> TOP UP </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 col-lg-3 col-4 text-center">
+                        <div class="card mb-3">
+                            <a href="games-Apex.html" class="product_list">
+                                <div class="card-game" bis_skin_checked="1">
+                                    <img src="apex.png" class="img-fluid" style="border-radius: 10px; display: block;box-shadow: 2px 10px 10px #c9c9c9;">
+                                </div>
+                                <div class="card-title" bis_skin_checked="1"> Apex Legends Mobile </div>
+                                <div class="card-subtitle" bis_skin_checked="1"></div>
+                                <div class="card-topup" bis_skin_checked="1" hidden="">
+                                    <div class="btn-topup" style="font-size: 0.60rem!important;" bis_skin_checked="1"> TOP UP </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 col-lg-3 col-4 text-center">
+                        <div class="card mb-3">
+                            <a href="games-DragonRaja.html" class="product_list">
+                                <div class="card-game" bis_skin_checked="1">
+                                    <img src="dragonraja.png" class="img-fluid" style="border-radius: 10px; display: block;box-shadow: 2px 10px 10px #c9c9c9;">
+                                </div>
+                                <div class="card-title" bis_skin_checked="1"> Dragon Raja </div>
+                                <div class="card-subtitle" bis_skin_checked="1"></div>
+                                <div class="card-topup" bis_skin_checked="1" hidden="">
+                                    <div class="btn-topup" style="font-size: 0.60rem!important;" bis_skin_checked="1"> TOP UP </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 col-lg-3 col-4 text-center">
+                        <div class="card mb-3">
+                            <a href="games-COC.html" class="product_list">
+                                <div class="card-game" bis_skin_checked="1">
+                                    <img src="Resized_logo.png" width="178 px" height="178px" class="img-fluid" style="border-radius: 10px; display: block;box-shadow: 2px 10px 10px #c9c9c9;">
+                                </div>
+                                <div class="card-title" bis_skin_checked="1"> Clash Of Clans </div>
+                                <div class="card-subtitle" bis_skin_checked="1"></div>
+                                <div class="card-topup" bis_skin_checked="1" hidden="">
+                                    <div class="btn-topup" style="font-size: 0.60rem!important;" bis_skin_checked="1"> TOP UP </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="container pt-4 pb-4" id="pulsa">
+            <div class="row">
+                <div class="col-12">
+                    <h5>Pulsa</h5>
+                    <span class="strip-primary"></span>
+                </div>
+            </div>
+        </div>
+        <div class="pb-4">
+            <div class="container">
+                <div class="row game">
+                    <div class="col-sm-3 col-lg-3 col-4 text-center">
+                        <div class="card mb-3">
+                            <a href="games-Telkomsel.html " class="product_list">
+                                <div class="card-game" bis_skin_checked="1">
+                                    <img src="telkom.png" class="img-fluid" style="border-radius: 10px; display: block;box-shadow: 2px 10px 10px #c9c9c9;">
+                                </div>
+                                <div class="card-title" bis_skin_checked="1"> TELKOMSEL </div>
+                                <div class="card-subtitle" bis_skin_checked="1"></div>
+                                <div class="card-topup" bis_skin_checked="1" hidden="">
+                                    <div class="btn-topup" style="font-size: 0.60rem!important;" bis_skin_checked="1"> TOP UP </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+        <div id="about" style="padding-top: 80px;padding-bottom: 80px !important;  background: #f6f6f6;">
+            <div class="wrapper">
+                <center class="about">
+                    <div class="about section" id="about" name="#about">
+                        <div class="widget2 HTML" data-version="3" id="HTML21">
+                            <h2>
+                                Ners Gaming Store Id : Website top-up terpercaya di Indonesia
+                            </h2><br>
+                            <p>
+                                Setiap bulannya, ribuan gamers menggunakan <b>NERS GAMING STORE ID</b> untuk melakukan pembelian kredit game dengan lancar, kredit permainan akan ditambahkan secara instan. Top-up Mobile Legends, Free Fire, Ragnarok M,
+                                dan berbagai game lainnya!
+                            </p>
+                        </div>
+                    </div>
+                </center>
+
+                <div class="grid-feature section" id="grid-feature" name="#grid-feature">
+                    <div class="widget HTML col-sm-12" data-version="3" id="HTML31">
+                        <i class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 456c-110.3 0-200-89.7-200-200 0-54.8 21.7-105.9 61.2-144 6.4-6.2 16.6-6 22.7.4 6.2 6.4 6 16.6-.4 22.7-33.1 32-51.3 74.9-51.3 120.9 0 92.5 75.3 167.8 167.8 167.8S423.8 348.5 423.8 256c0-87.1-66.7-159-151.8-167.1v62.6c0 8.9-7.2 16.1-16.1 16.1s-16.1-7.2-16.1-16.1V72.1c0-8.9 7.2-16.1 16.1-16.1 110.3 0 200 89.7 200 200S366.3 456 256 456z"></path><path d="M175.9 161.9l99.5 71.5c13.5 9.7 16.7 28.5 7 42s-28.5 16.7-42 7c-2.8-2-5.2-4.4-7-7l-71.5-99.5c-3.2-4.5-2.2-10.8 2.3-14 3.6-2.6 8.3-2.4 11.7 0z"></path></svg></i>
+                        <div class="info">
+                            <div class="wrap">
+                                <h3 style="font-size: 22px;">Bayar dalam hitungan detik</h3>
+                                <p style="color: #000;">
+                                    Hanya dibutuhkan beberapa detik saja untuk menyelesaikan pembayaran di
+                                    <data:blog.title> karena situs kami berfungsi dengan baik dan mudah untuk digunakan.
+                                    </data:blog.title>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="widget HTML col-sm-12" data-version="3" id="HTML32">
+                        <i class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M376.2 224H268l52.4-186.9c.9-4.5-4.6-7.1-7.2-3.4L129.5 274.6c-3.8 5.6-.2 13.4 6.3 13.4H244l-52.4 186.9c-.9 4.5 4.6 7.1 7.2 3.4l183.7-240.8c3.7-5.7.2-13.5-6.3-13.5z"></path></svg></i>
+                        <div class="info">
+                            <div class="wrap">
+                                <h3 style="font-size: 22px;">Pengiriman instan</h3>
+                                <p style="color: #000;">
+                                    Ketika kamu melakukan top-up di
+                                    <data:blog.title>, item atau barang yang kamu beli akan selalu dikirim ke akun kamu secara instan dan cepat, tanpa tertunda.
+                                    </data:blog.title>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="widget HTML col-sm-12" data-version="3" id="HTML33">
+                        <i class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M317.5 210.3c1.7-1.8 1.8-4.7 0-6.5l-19.8-21c-.8-.9-2-1.4-3.2-1.4-1.2 0-2.4.5-3.2 1.4l-66.5 69.1 26.4 27.1 66.3-68.7zM123.8 253.1c-.9-.9-2-1.4-3.2-1.4-1.2 0-2.3.5-3.2 1.4l-20.1 20.7c-1.8 1.8-1.8 4.8 0 6.6l63.2 65c4 4.2 9 6.6 13.2 6.6 6 0 11.1-4.5 13.1-6.4l.1-.1 13.4-13.8-76.5-78.6z"></path><path d="M414.7 182.4l-19.8-21c-.8-.9-2-1.4-3.2-1.4-1.2 0-2.4.5-3.2 1.4L250.7 304.1l-50.1-51.6c-.9-.9-2-1.4-3.2-1.4-1.2 0-2.3.5-3.2 1.4l-20.1 20.7c-1.8 1.8-1.8 4.8 0 6.6l63.2 65c4 4.2 9 6.6 13.2 6.6 6 0 11.1-4.5 13.1-6.4l.1-.1 151-156.1c1.7-1.7 1.7-4.6 0-6.4z"></path></svg></i>
+                        <div class="info">
+                            <div class="wrap">
+                                <h3 style="font-size: 22px;">Metode pembayaran terbaik</h3>
+                                <p style="color: #000;">
+                                    Kami menawarkan begitu banyak pilihan pembayaran mulai dari potong pulsa, e-wallet, bank transfer, dan pembayaran di mini market terdekat.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="widget HTML col-sm-12" data-version="3" id="HTML34">
+                        <i class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 123.8c-24.3 0-46.9 10.1-63.9 28.4-17 18.3-26.1 33.2-26.1 59.6 0 7.7 5.9 14 13.2 14 7.3 0 13.2-6.3 13.2-14 0-17.3 6.6-32.4 19-43.5 11.8-10.6 27.7-16.5 44.7-16.5s32.9 5.8 44.7 16.5c12.4 11.2 19 26.2 19 43.5 0 7.7 5.9 14 13.2 14 7.3 0 13.2-6.3 13.2-14 0-26.4-9.2-41.3-26.1-59.6-17.2-18.4-39.8-28.4-64.1-28.4z"></path><path d="M457.1 278.9C442.3 264.1 422.8 256 402 256h-8c-2.2 0-4-1.8-4-4v-37.8c0-35.7-14-69.3-39.4-94.7C325.3 94 291.7 80 256 80c-35.7 0-69.3 14-94.6 39.4-25.4 25.4-39.4 59-39.4 94.7V252c0 2.2-1.8 4-4 4h-8c-20.8 0-40.3 8.1-55.1 22.9C40.1 293.7 32 313.2 32 334v11.8c0 20.8 8.1 40.4 22.9 55.2 14.8 14.8 34.4 23 55.1 23h5.6c4 0 8 1.4 10.9 4.1 2.5 2.3 5.9 3.8 9.5 3.8 7.7 0 14-6.3 14-14.1V214.1c0-28.2 11.1-54.8 31.2-74.9 20.1-20.1 46.7-31.2 74.8-31.2 28.2 0 54.8 11.1 74.8 31.2 20.1 20.1 31.2 46.7 31.2 74.9v203.8c0 7.8 6.3 14.1 14 14.1 3.6 0 7-1.5 9.5-3.8 2.9-2.7 6.9-4.1 10.9-4.1h5.6c20.7 0 40.3-8.2 55.1-23 14.8-14.8 22.9-34.4 22.9-55.2V334c0-20.8-8.1-40.3-22.9-55.1z"></path></svg></i>
+                        <div class="info">
+                            <div class="wrap">
+                                <h3 style="font-size: 22px;">Pelayanan Pelanggan</h3>
+                                <p style="color: #000;">
+                                    Tim support siap membantu Anda dari pukul 9 pagi hingga 12 pagi, 7 hari seminggu.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+        <div class="modal fade" id="myModal111" aria-labelledby="modalInformationsLabel" tabindex="-1" aria-hidden="true" style="display: none;">
+            <div class="modal-dialog modal-dialog-centered modal-lg modal-dialog-scrollable">
+                <div class="modal-content " style="background-color: #06142f !important;box-shadow:0 0 2rem #000000 !important">
+                    <div class="modal-body">
+                        <div class="row" id="textInfo">
+                            <div class="col-12 mb-2">
+                                <div class="card" style="border:1px solid #4b4d50;background-color: #484d52;box-shadow:0px 0px 0px #e7e7e7 !important">
+                                    <div class="card-header">
+                                        <h5 style="color: #fff; font-size;1.25rem">Perhatian !</h5>
+                                    </div>
+                                    <div class="card-body pb-1" style="background-color: #06142f !important">
+                                        <div class="col-12" style="text-align:center">
+                                            <img src="" width="70%" class="mb-2">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col" style="text-align: right!important;">
+                                <button type="submit" data-dismiss="modal" style="font-size:12px;background-color: #fff !important;color:#06142F !important;padding:10px;font-size:12px;font-weight:500" class="close btn btn-sm">
+                                        Tutup
+                                    </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <script>
+            var demoImage = '';
+        </script>
+
+
+        <footer id="aboutus" class="bg-footer">
+            <div id="contact">
+                <div class="wrapper">
+                    <div style="background:#1b1734;" class="grid-contact section" id="grid-contact" name="#grid-contact">
+                        <div class="widget3 HTML" data-version="3" id="HTML41">
+                            <h3 style="color: #fff;">
+                                Butuh Bantuan?
+                            </h3>
+                            <!-- <p style="color: #fff;">
+                                <b style="color: #fff;">WhatsApp <a href="https://wa.me/6285934420677" class="text-decoration-none" target="_blank">
+                        <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                            <path fill="currentColor"
+                                d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 15 3.8 13.47 3.8 11.91C3.81 7.37 7.5 3.67 12.05 3.67M8.53 7.33C8.37 7.33 8.1 7.39 7.87 7.64C7.65 7.89 7 8.5 7 9.71C7 10.93 7.89 12.1 8 12.27C8.14 12.44 9.76 14.94 12.25 16C12.84 16.27 13.3 16.42 13.66 16.53C14.25 16.72 14.79 16.69 15.22 16.63C15.7 16.56 16.68 16.03 16.89 15.45C17.1 14.87 17.1 14.38 17.04 14.27C16.97 14.17 16.81 14.11 16.56 14C16.31 13.86 15.09 13.26 14.87 13.18C14.64 13.1 14.5 13.06 14.31 13.3C14.15 13.55 13.67 14.11 13.53 14.27C13.38 14.44 13.24 14.46 13 14.34C12.74 14.21 11.94 13.95 11 13.11C10.26 12.45 9.77 11.64 9.62 11.39C9.5 11.15 9.61 11 9.73 10.89C9.84 10.78 10 10.6 10.1 10.45C10.23 10.31 10.27 10.2 10.35 10.04C10.43 9.87 10.39 9.73 10.33 9.61C10.27 9.5 9.77 8.26 9.56 7.77C9.36 7.29 9.16 7.35 9 7.34C8.86 7.34 8.7 7.33 8.53 7.33Z" />
+                        </svg></p>
+                            
+                        </a> -->
+                            </b>
+                            </p><b style="color: #fff;">
+                    </b></div><b style="color: #fff;">
+                    </b></div><b style="color: #fff;">
+                    </b></div><b style="color: #fff;">
+                    </b></div><b style="color: #fff;">
+                
+                <div class="fab-container">
+                    <div class="fab fab-icon-holder" style="background-color:#FFF; padding:5px">
+                                            <img src="https://turbowoii.com/assets/images/callcenter.webp" class="img-fluid2" alt="">
+                    </div>
+                    
+                    <ul class="fab-options">
+                      <li>
+                        <!-- <a href="https://instagram.com/nersgamingstore_id " class="text-decoration-none" target="_blank">
+                        <div class="fab-icon-holder" style="background: radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%), radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%), radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent), linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);">
+                        <svg style="width:24px;height:24px" viewBox="0 0 24 19">
+                            <path fill="currentColor"
+                                d="M7.8,2H16.2C19.4,2 22,4.6 22,7.8V16.2A5.8,5.8 0 0,1 16.2,22H7.8C4.6,22 2,19.4 2,16.2V7.8A5.8,5.8 0 0,1 7.8,2M7.6,4A3.6,3.6 0 0,0 4,7.6V16.4C4,18.39 5.61,20 7.6,20H16.4A3.6,3.6 0 0,0 20,16.4V7.6C20,5.61 18.39,4 16.4,4H7.6M17.25,5.5A1.25,1.25 0 0,1 18.5,6.75A1.25,1.25 0 0,1 17.25,8A1.25,1.25 0 0,1 16,6.75A1.25,1.25 0 0,1 17.25,5.5M12,7A5,5 0 0,1 17,12A5,5 0 0,1 12,17A5,5 0 0,1 7,12A5,5 0 0,1 12,7M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9Z" />
+                        </svg>
+                        </div>
+                      </a> -->
+                      </li>
+                      <li>
+                        <!-- <a href="https://wa.me/6285934420677" class="text-decoration-none" target="_blank">
+                        <div class="fab-icon-holder" style="background-color: #25D366;">
+                        <svg style="width:24px;height:24px" viewBox="0 0 24 19">
+                            <path fill="currentColor"
+                                d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 15 3.8 13.47 3.8 11.91C3.81 7.37 7.5 3.67 12.05 3.67M8.53 7.33C8.37 7.33 8.1 7.39 7.87 7.64C7.65 7.89 7 8.5 7 9.71C7 10.93 7.89 12.1 8 12.27C8.14 12.44 9.76 14.94 12.25 16C12.84 16.27 13.3 16.42 13.66 16.53C14.25 16.72 14.79 16.69 15.22 16.63C15.7 16.56 16.68 16.03 16.89 15.45C17.1 14.87 17.1 14.38 17.04 14.27C16.97 14.17 16.81 14.11 16.56 14C16.31 13.86 15.09 13.26 14.87 13.18C14.64 13.1 14.5 13.06 14.31 13.3C14.15 13.55 13.67 14.11 13.53 14.27C13.38 14.44 13.24 14.46 13 14.34C12.74 14.21 11.94 13.95 11 13.11C10.26 12.45 9.77 11.64 9.62 11.39C9.5 11.15 9.61 11 9.73 10.89C9.84 10.78 10 10.6 10.1 10.45C10.23 10.31 10.27 10.2 10.35 10.04C10.43 9.87 10.39 9.73 10.33 9.61C10.27 9.5 9.77 8.26 9.56 7.77C9.36 7.29 9.16 7.35 9 7.34C8.86 7.34 8.7 7.33 8.53 7.33Z" />
+                        </svg>
+                        </div>
+                        </a> -->
+                      </li>
+                    </ul>
+                    
+                 </div>
+                 
+                <div class="bg-theme1 text-center pb-4" style="color:#fff"> Copyright © 2023 NERS GAMING STORE ID. All
+                    Rights Reserved <br><br><a href="https://wa.me/6287709289728">Development by Neil Website</a> 
+                </div>
+            </b></footer><b style="color: #fff;">
+        </b></div><b style="color: #fff;">
+
+        <a href="javaScript:void();" class="back-to-top">
+            <i class="fa fa-angle-double-up"></i>
+        </a>
+
+        <!--End wrapper-->
+        <!-- Bootstrap core JavaScript-->
+        <script src="https://topstoreid.com/assets/js/jquery.min.js"></script>
+        <script src="https://topstoreid.com/assets/js/popper.min.js"></script>
+        <script src="https://topstoreid.com/assets/js/bootstrap.min.js"></script>
+        <!-- simplebar js -->
+        <script src="https://topstoreid.com/assets/plugins/simplebar/js/simplebar.js"></script>
+        <!-- Custom scripts -->
+        <script src="https://topstoreid.com/assets/js/app-script.js"></script>
+        <script src="https://topstoreid.com/assets/plugins/summernote/dist/summernote-bs4.min.js"></script>
+        <!--Select Plugins Js-->
+        <script src="https://topstoreid.com/assets/plugins/select2/js/select2.min.js"></script>
+        <!--Data Tables js-->
+        <script src="https://topstoreid.com/assets/plugins/bootstrap-datatable/js/jquery.dataTables.min.js"></script>
+        <script src="https://topstoreid.com/assets/plugins/bootstrap-datatable/js/dataTables.bootstrap4.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <script src="https://cdn.ckeditor.com/4.19.0/standard/ckeditor.js"></script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.min.js"></script>
+        <script src="https://topstoreid.com/assets/js/promobox.js"></script>
+        <script src="https://unpkg.com/bootstrap-table@1.21.0/dist/bootstrap-table.min.js"></script>
+        <script src="https://unpkg.com/bootstrap-table@1.21.0/dist/extensions/filter-control/bootstrap-table-filter-control.min.js"></script>
+
+
+
+        <script>
+            // $(document).ready(function() {
+            //     $('#default-datatable').DataTable();
+            // });
+
+            function openNav() {
+                document.getElementById("mySidenav").style.width = "300px";
+            }
+
+            function closeNav() {
+                document.getElementById("mySidenav").style.width = "0";
+            }
+        </script>
+        <script>
+        </script>
+        <script>
+            $(document).ready(function() {
+                $("#myModal").modal('show');
+            });
+        </script>
+
+
+        </b>
+</body>
+
+</html>

@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Ners Gaming Store - Layanan Top Up Games #1 Indonesia</title>
+
+    <meta name="description" content="Top Up Terlengkap dan Terpercaya di Indonesia">
+    <meta name="keywords" content="Nersgamingstore">
+
+    <link rel="shortcut icon" href="Favicon.png" alt="logo icon nersgamingstore">
+    <link rel="stylesheet" href="simplebar.css">
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="dataTables.css">
+    <link rel="stylesheet" href="animate.css">
+    <link rel="stylesheet" href="icons.css">
+    <link rel="stylesheet" href="horizontal-menu.css">
+    <link rel="stylesheet" href="app-style.css">
+    <link rel="stylesheet" href="style-main.css">
+
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.css">
+    <link href="https://unpkg.com/bootstrap-table@1.21.0/dist/bootstrap-table.min.css" rel="stylesheet">
+
+    <style>
+         :root {
+            --warna: #f6f6f6;
+            --warna_2: #f7f7f7;
+            --warna_3: #05132e;
+        }
+        
+        body {
+            font-size: 14px;
+        }
+        
+        .content {
+            padding-top: 110px;
+            min-height: 446px;
+        }
+        
+        .table-white tr th,
+        .table-white tr td {
+            color: #fff;
+            border-color: #242f3a;
+        }
+        
+        #detail-pembelian .pb-2 {
+            color: #000 !important;
+        }
+        
+        label {
+            font-weight: 500;
+            text-transform: none;
+        }
+        
+        .col-form-label {
+            padding-top: calc(.375rem + 3px);
+        }
+        
+        .card-tools {
+            float: right;
+            margin-top: -25px;
+        }
+        
+        .cursor-pointer {
+            cursor: pointer;
+        }
+        
+        .menu-user a {
+            padding: 10px 16px;
+            border-radius: 5px;
+        }
+        
+        .menu-user a:hover {
+            background: var(--warna_2);
+        }
+        
+        .menu-user a i {
+            font-size: 19px;
+            width: 20px;
+        }
+        
+        .menu-user {
+            margin-bottom: 26px;
+        }
+        
+        .daterangepicker td,
+        .daterangepicker th {
+            color: #626262;
+        }
+        
+        body,
+        .circle-primary {
+            background: var(--warna);
+        }
+        
+        .bg-footer {
+            background-color: var(--warna);
+        }
+        
+        .bg-custom,
+        .bg-theme1 {
+            background: #05132E !important;
+            padding: 20px 20px 20px 20px;
+        }
+        
+        .btn-topup,
+        .back-to-top {
+            background: var(--warna_3);
+        }
+        
+        .section {
+            background: var(--warna_2);
+        }
+        
+        .radio-nominal+label,
+        .radio-nominale+label {
+            background: var(--warna);
+            border: none !important;
+        }
+        
+        .radio-nominale:checked+label,
+        .radio-nominal:checked+label {
+            background: var(--warna_3);
+            color: #fff;
+        }
+        
+        .strip-primary {
+            background: #652572;
+        }
+        
+        .btn-primary {
+            background: var(--warna_3) !important;
+            border-color: var(--warna_3) !important;
+        }
+        
+        .sidenav {
+            background: var(--warna_2);
+        }
+        
+        .radio-nominal:checked+label,
+        .table-white tr th,
+        .table-white tr td {
+            border-color: var(--warna);
+        }
+        
+        .menu-utama div a {
+            margin: 0 4px;
+        }
+        
+        .menu-utama div a:hover,
+        .menu-utama div a.active {
+            background: #000;
+            border-radius: 14px 4px;
+        }
+        
+        .navbar-collapse {
+            background: #05132e;
+        }
+        
+        .menu-list {
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        .menu-list li a {
+            display: block;
+            padding: 10px 0;
+            border-bottom: 1px dashed var(--warna_3);
+            transition: .4s;
+        }
+        
+        .menu-list li a:hover {
+            padding-left: 6px;
+        }
+        
+        .navbar-dark .navbar-nav .nav-link {
+            color: rgb(255 255 255);
+        }
+        
+        .card {
+            border-radius: 10px;
+            background-color: #ffffff;
+            box-shadow: 0px 10px 10px #e7e7e7;
+        }
+        
+        .card-title {
+            min-height: 30px;
+            margin-top: -5px;
+            font-weight: 600;
+            font-size: 10px;
+            color: #000;
+        }
+        
+        .card-title2 {
+            min-height: 30px !important;
+            margin-top: -25px !important;
+            font-weight: 600 !important;
+            font-size: 10px !important;
+            color: #fff !important;
+            background: #000000 !important;
+            padding-top: 8px !important;
+            margin-bottom: 0px !important;
+        }
+        
+        .radio-nominal+label,
+        .radio-nominale+label {
+            background: #ffffff;
+            border: none !important;
+            text-align: left;
+            color: #3e3e3e;
+            box-shadow: 0px 1px darkgrey;
+        }
+        
+        .btn-primary {
+            background: #05132e !important;
+            border-color: #05132e !important;
+        }
+        
+        .radio-nominale:checked+label,
+        .radio-nominal:checked+label {
+            background: #05132e;
+            color: #fff;
+        }
+        
+        .strip-primary {
+            background: #05132e;
+        }
+        
+        .table-white tr th,
+        .table-white tr td {
+            color: #2a2a2a;
+            border-color: #242f3a;
+        }
+        
+        .h1,
+        .h2,
+        .h3,
+        .h4,
+        .h5,
+        .h6,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-weight: 600;
+            color: #2a2a2a;
+        }
+        
+        .pb-3,
+        .py-3 {
+            color: #2a2a2a;
+        }
+        
+        .mb-2,
+        .my-2 {
+            color: #ffffff;
+        }
+        
+        .text-white {
+            color: #2a2a2a !important;
+        }
+        
+        .form-control {
+            border: 1px solid #cfcfcf;
+            background-color: #f1f1f1;
+        }
+        
+        .small,
+        small {
+            color: #2a2a2a;
+        }
+        
+        .form-row>.col,
+        .form-row>[class*=col-] {
+            padding-right: 5px;
+            padding-left: 5px;
+            color: #ffffff;
+        }
+        
+        .gov-car {
+            padding-top: 110px;
+            background: #05132e;
+            height: 25rem;
+            border-bottom-left-radius: 1.5rem;
+            border-bottom-right-radius: 1.5rem;
+            margin-bottom: 10rem !important;
+            margin-left: 20rem;
+            margin-right: 20rem;
+        }
+        
+        .text-hitam {
+            color: #000 !important;
+        }
+        
+        @media only screen and (max-width: 767px) {
+            .gov-car {
+                height: 15rem;
+                margin-bottom: 5rem !important;
+                margin-left: 0rem;
+                margin-right: 0rem;
+            }
+        }
+        
+        .fab-container {
+            position: fixed;
+            bottom: 70px;
+            right: 10px;
+            z-index: 999;
+            cursor: pointer;
+        }
+        
+        .img-fluid2 {
+            max-width: 100%;
+            height: auto;
+            padding-bottom: 15px;
+        }
+        
+        .fab-icon-holder {
+            width: 45px;
+            height: 45px;
+            bottom: 140px;
+            left: 10px;
+            color: #FFF;
+            background: #5865f2;
+            border-radius: 10px;
+            text-align: center;
+            font-size: 30px;
+            z-index: 99999;
+        }
+        
+        .fab-icon-holder:hover {
+            opacity: 0.8;
+        }
+        
+        .fab-icon-holder i {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            font-size: 25px;
+            color: #ffffff;
+        }
+        
+        .fab-options {
+            list-style-type: none;
+            margin: 0;
+            position: absolute;
+            bottom: 48px;
+            left: -45px;
+            opacity: 0;
+            transition: all 0.3s ease;
+            transform: scale(0);
+            transform-origin: 85% bottom;
+        }
+        
+        .fab:hover+.fab-options,
+        .fab-options:hover {
+            opacity: 1;
+            transform: scale(1);
+        }
+        
+        .fab-options li {
+            display: flex;
+            justify-content: flex-start;
+            padding: 5px;
+        }
+        
+        .fab-label {
+            padding: 2px 5px;
+            align-self: center;
+            user-select: none;
+            white-space: nowrap;
+            border-radius: 3px;
+            font-size: 16px;
+            background: #666666;
+            color: #ffffff;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+            margin-left: 10px;
+        }
+        
+        .text-decoration-none {
+            text-decoration: none !important;
+        }
+        
+        .wrapper {
+            margin: auto;
+            width: 1250px;
+            max-width: calc(100% - 40px);
+        }
+        
+        .grid-feature {
+            margin-top: 40px;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 40px;
+            overflow: auto;
+        }
+        
+        .widget2 {
+            display: grid;
+            grid-template-columns: auto 1fr;
+            grid-gap: 40px;
+            padding: 40px;
+            box-shadow: 0px;
+            border: 0px;
+            border-radius: 0px;
+            background: 0px;
+        }
+        
+        .widget {
+            display: grid;
+            grid-template-columns: auto 1fr;
+            grid-gap: 40px;
+            padding: 40px;
+            box-shadow: inset 0 -2px 0 0 rgba(0 0 0 / 10%), 0 10px 15px -3px rgb(0 0 0 / 5%), 0 4px 6px -2px rgb(0 0 0 / 5%);
+            border: 1px solid #0000001a;
+            border-radius: 11px;
+            background: #ffffff;
+        }
+        
+        .icon {
+            height: 110px;
+            transition: .1s;
+            display: flex;
+            align-items: center;
+        }
+        
+        #contact {
+            position: relative;
+            padding: 40px 0;
+            background: #1b1734;
+            color: var(--white);
+            margin-top: 10px;
+        }
+        
+        #contact:before {
+            content: '';
+            border-top: 10px dashed #1B1734;
+            background: #f6f6f6;
+            position: absolute;
+            width: 100%;
+            bottom: calc(100%);
+            left: 0;
+        }
+        
+        #footer #contact .grid-contact {
+            display: grid;
+            grid-template-columns: 1fr auto;
+            font-size: 70%;
+            grid-gap: 20px;
+        }
+        
+        .widget3 {
+            margin: auto;
+            text-align: center;
+        }
+        
+        #footer #about {
+            padding: 40px 0;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="content">
+        <header>
+            <nav class="navbar navbar-expand-lg fixed-top navbar-dark  bg-custom shadow-navbar">
+                <div class="container">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="Resized_logo.png" width="60" alt="logo icon" class="rounded">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse menu-utama" id="navbarNavAltMarkup">
+                        <div class="navbar-nav ml-auto">
+                            <a class="nav-item nav-link active" href="index.html">Home</a>
+                            <a class="nav-item nav-link " href="pesanan.html">Cek Pesanan</a>
+                            <div class="dropdown">
+                                <a class="nav-link" href="#" role="button" id="dropdownMenuLink" onclick="toggleDropdown()">
+        Daftar Harga
+    </a>
+                                <div class="dropdown-menu" id="dropdownMenu" aria-labelledby="dropdownMenuLink">
+                                    <a class="dropdown-item" href="list-MLBB.html">Mobile Legends</a>
+                                    <a class="dropdown-item" href="list-FF.html">Free Fire</a>
+                                    <a class="dropdown-item" href="list-PUBG.html">PUBG Mobile</a>
+                                    <a class="dropdown-item" href="list-Domino.html">Higgs Domino</a>
+                                    <a class="dropdown-item" href="list-PES.html">E Football PES</a>
+                                    <a class="dropdown-item" href="list-Genshin.html">Genshin Impact</a>
+                                    <a class="dropdown-item" href="list-Apex.html">Apex Legends Mobile</a>
+                                    <a class="dropdown-item" href="list-DragonRaja.html">Dragon Raja</a>
+                                    <a class="dropdown-item" href="list-COC.html">Clash of Clans</a>
+                                    <a class="dropdown-item" href="list-Telkomsel.html">Telkomsel</a>
+                                </div>
+                            </div>
+
+                            <script>
+                                function toggleDropdown() {
+                                    var dropdown = document.getElementById("dropdownMenu");
+                                    if (dropdown.style.display === "block") {
+                                        dropdown.style.display = "none";
+                                    } else {
+                                        dropdown.style.display = "block";
+                                    }
+                                }
+                            </script>
+                            <a class="nav-item nav-link " href="method.html">Metode Pembayaran</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <div class="clearfix pt-5"></div>
+        <div class="pt-5 pb-5">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-12">
+                        <div class="pt-3 pb-4">
+                            <h5>Metode Pembayaran</h5>
+                            <span class="strip-primary"></span>
+                        </div>
+                        <div class="section">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-4 mb-4">
+                                        <div class="metode-bayar p-3" style="background: var(--warna_3);box-shadow: none;">
+                                            <img src="mandiri.png" width="100" class="mb-3 rounded">
+                                            <p class="m-0">MANDIRI TRANSFER</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-4 mb-4">
+                                        <div class="metode-bayar p-3" style="background: var(--warna_3);box-shadow: none;">
+                                            <img src="mandiri.png" width="100" class="mb-3 rounded">
+                                            <p class="m-0">DANA</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-4 mb-4">
+                                        <div class="metode-bayar p-3" style="background: var(--warna_3);box-shadow: none;">
+                                            <img src="ovo 1.png" width="100" class="mb-3 rounded">
+                                            <p class="m-0">OVO</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-4 mb-4">
+                                        <div class="metode-bayar p-3" style="background: var(--warna_3);box-shadow: none;">
+                                            <img src="gopay 1.png" width="100" class="mb-3 rounded">
+                                            <p class="m-0">GOPAY</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-4 mb-4">
+                                        <div class="metode-bayar p-3" style="background: var(--warna_3);box-shadow: none;">
+                                            <img src="telkom.png" width="100" class="mb-3 rounded">
+                                            <p class="m-0">TELKOMSEL</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer id="aboutus" class="bg-footer">
+            <div id="contact">
+                <div class="wrapper">
+                    <div style="background:#1b1734;" class="grid-contact section" id="grid-contact" name="#grid-contact">
+                        <div class="widget3 HTML" data-version="3" id="HTML41">
+                            <h3 style="color: #fff;">
+                                Butuh Bantuan?
+                            </h3>
+                            <!-- <p style="color: #fff;">
+                                <b style="color: #fff;">WhatsApp <a href="https://wa.me/6285934420677" class="text-decoration-none"
+                target="_blank">
+                <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                    <path fill="currentColor"
+                        d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 15 3.8 13.47 3.8 11.91C3.81 7.37 7.5 3.67 12.05 3.67M8.53 7.33C8.37 7.33 8.1 7.39 7.87 7.64C7.65 7.89 7 8.5 7 9.71C7 10.93 7.89 12.1 8 12.27C8.14 12.44 9.76 14.94 12.25 16C12.84 16.27 13.3 16.42 13.66 16.53C14.25 16.72 14.79 16.69 15.22 16.63C15.7 16.56 16.68 16.03 16.89 15.45C17.1 14.87 17.1 14.38 17.04 14.27C16.97 14.17 16.81 14.11 16.56 14C16.31 13.86 15.09 13.26 14.87 13.18C14.64 13.1 14.5 13.06 14.31 13.3C14.15 13.55 13.67 14.11 13.53 14.27C13.38 14.44 13.24 14.46 13 14.34C12.74 14.21 11.94 13.95 11 13.11C10.26 12.45 9.77 11.64 9.62 11.39C9.5 11.15 9.61 11 9.73 10.89C9.84 10.78 10 10.6 10.1 10.45C10.23 10.31 10.27 10.2 10.35 10.04C10.43 9.87 10.39 9.73 10.33 9.61C10.27 9.5 9.77 8.26 9.56 7.77C9.36 7.29 9.16 7.35 9 7.34C8.86 7.34 8.7 7.33 8.53 7.33Z" />
+                </svg>
+            </a>
+                            </p> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="fab-container">
+                <div class="fab fab-icon-holder" style="background-color:#FFF; padding:5px">
+                    <img src="https://turbowoii.com/assets/images/callcenter.webp" class="img-fluid2" alt="">
+                </div>
+
+                <ul class="fab-options">
+                    <li>
+                        <a href="https://instagram.com/nersgamingstore_id " class="text-decoration-none" target="_blank">
+                            <div class="fab-icon-holder" style="background: radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%), radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%), radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent), linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);">
+                                <svg style="width:24px;height:24px" viewBox="0 0 24 19">
+                                    <path fill="currentColor"
+                                        d="M7.8,2H16.2C19.4,2 22,4.6 22,7.8V16.2A5.8,5.8 0 0,1 16.2,22H7.8C4.6,22 2,19.4 2,16.2V7.8A5.8,5.8 0 0,1 7.8,2M7.6,4A3.6,3.6 0 0,0 4,7.6V16.4C4,18.39 5.61,20 7.6,20H16.4A3.6,3.6 0 0,0 20,16.4V7.6C20,5.61 18.39,4 16.4,4H7.6M17.25,5.5A1.25,1.25 0 0,1 18.5,6.75A1.25,1.25 0 0,1 17.25,8A1.25,1.25 0 0,1 16,6.75A1.25,1.25 0 0,1 17.25,5.5M12,7A5,5 0 0,1 17,12A5,5 0 0,1 12,17A5,5 0 0,1 7,12A5,5 0 0,1 12,7M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9Z" />
+                                </svg>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://wa.me/6285934420677" class="text-decoration-none" target="_blank">
+                            <div class="fab-icon-holder" style="background-color: #25D366;">
+                                <svg style="width:24px;height:24px" viewBox="0 0 24 19">
+                                    <path fill="currentColor"
+                                        d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 15 3.8 13.47 3.8 11.91C3.81 7.37 7.5 3.67 12.05 3.67M8.53 7.33C8.37 7.33 8.1 7.39 7.87 7.64C7.65 7.89 7 8.5 7 9.71C7 10.93 7.89 12.1 8 12.27C8.14 12.44 9.76 14.94 12.25 16C12.84 16.27 13.3 16.42 13.66 16.53C14.25 16.72 14.79 16.69 15.22 16.63C15.7 16.56 16.68 16.03 16.89 15.45C17.1 14.87 17.1 14.38 17.04 14.27C16.97 14.17 16.81 14.11 16.56 14C16.31 13.86 15.09 13.26 14.87 13.18C14.64 13.1 14.5 13.06 14.31 13.3C14.15 13.55 13.67 14.11 13.53 14.27C13.38 14.44 13.24 14.46 13 14.34C12.74 14.21 11.94 13.95 11 13.11C10.26 12.45 9.77 11.64 9.62 11.39C9.5 11.15 9.61 11 9.73 10.89C9.84 10.78 10 10.6 10.1 10.45C10.23 10.31 10.27 10.2 10.35 10.04C10.43 9.87 10.39 9.73 10.33 9.61C10.27 9.5 9.77 8.26 9.56 7.77C9.36 7.29 9.16 7.35 9 7.34C8.86 7.34 8.7 7.33 8.53 7.33Z" />
+                                </svg>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+
+            <div class="bg-theme1 text-center pb-4" style="color:#fff"> Copyright © 2023 NERS GAMING STORE ID. All Rights Reserved <br><br><a href="https://wa.me/6287709289728">Development by Neil Website</a>
+            </div>
+        </footer>
+    </div>
+
+    <a href="javaScript:void();" class="back-to-top">
+        <i class="fa fa-angle-double-up"></i>
+    </a>
+
+    <!--End wrapper-->
+    <!-- Bootstrap core JavaScript-->
+    <script src="https://topstoreid.com/assets/js/jquery.min.js"></script>
+    <script src="https://topstoreid.com/assets/js/popper.min.js"></script>
+    <script src="https://topstoreid.com/assets/js/bootstrap.min.js"></script>
+    <!-- simplebar js -->
+    <script src="https://topstoreid.com/assets/plugins/simplebar/js/simplebar.js"></script>
+    <!-- Custom scripts -->
+    <script src="https://topstoreid.com/assets/js/app-script.js"></script>
+    <script src="https://topstoreid.com/assets/plugins/summernote/dist/summernote-bs4.min.js"></script>
+    <!--Select Plugins Js-->
+    <script src="https://topstoreid.com/assets/plugins/select2/js/select2.min.js"></script>
+    <!--Data Tables js-->
+    <script src="https://topstoreid.com/assets/plugins/bootstrap-datatable/js/jquery.dataTables.min.js"></script>
+    <script src="https://topstoreid.com/assets/plugins/bootstrap-datatable/js/dataTables.bootstrap4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdn.ckeditor.com/4.19.0/standard/ckeditor.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.min.js"></script>
+    <script src="https://topstoreid.com/assets/js/promobox.js"></script>
+    <script src="https://unpkg.com/bootstrap-table@1.21.0/dist/bootstrap-table.min.js"></script>
+    <script src="https://unpkg.com/bootstrap-table@1.21.0/dist/extensions/filter-control/bootstrap-table-filter-control.min.js"></script>
+
+
+
+    <script>
+        // $(document).ready(function() {
+        //     $('#default-datatable').DataTable();
+        // });
+
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "300px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+    </script>
+    <script>
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#myModal").modal('show');
+        });
+    </script>
+
+</body>
+
+</html>

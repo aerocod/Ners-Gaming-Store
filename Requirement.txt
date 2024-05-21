@@ -1,0 +1,33 @@
+Halaman Yang Dibutuhkan:
+1. Home page
+2. Cek pesanan
+3. Tabel harga (10 Item top up)
+4. Metode Pembayaran
+5. Login member
+6. Item top up (+10 halaman)
+
+Integrasi:
+1. Whatsapp API
+2. Sosial media (opsional)
+3. Order by wa forwarding from form
+4. Logo toko
+5. Banner toko (opsional)
+6. In built database (penyimpanan login member)
+
+Total Halaman:
+1. 15 Halaman + 10 Tabel Item top up
+
+Harga Website:
+Rp. 1.350.000
+
+Paket Website:
+1. Design website saja Rp. 1.358.000 
+2. Design website + hosting Rp. 1.558.000 (Garansi 1 tahun selama tidak melanggar ketentuan perundang-undangan)
+3. Design Website + hosting + domain .com Rp. 1.728.000 (Garansi 1 tahun selama tidak melanggar ketentuan perundang-undangan).
+
+References:
+http://topstoreid.com
+
+Sosmed + WA:
+https://wa.me/6285934420677
+https://instagram.com/nersgamingstore_id 
